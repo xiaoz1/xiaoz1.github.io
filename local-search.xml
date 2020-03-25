@@ -8,7 +8,7 @@
     <link href="/2020/03/25/Hello-HEXO/"/>
     <url>/2020/03/25/Hello-HEXO/</url>
     
-    <content type="html"><![CDATA[<p>  这是一个测试文章。<br>#标题一<br>##标题二<br>###标题三</p><pre><code class="bash">#这个代码显示</code></pre><p>这是个连接测试：<a href="https://www.baidu.com/" target="_blank" rel="noopener">百度</a></p>]]></content>
+    <content type="html"><![CDATA[<p>这是一个测试文章。</p><h1>标题h1</h1><h2>标题h2</h2><h3>标题h3</h3><h4>标题h4</h4><h5>标题h5</h5><h6>标题h6</h6><p>这是一个段落</p><pre><code class="bash">#this is code.</code></pre><p>这是个连接测试：<a href="https://www.baidu.com/" target="_blank" rel="noopener">百度</a></p>]]></content>
     
     
     
