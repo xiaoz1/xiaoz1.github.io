@@ -254,7 +254,7 @@ gzip Align.vba.gz  #解压文件</code></pre><p>在/.vim/目录下</p>
                   
   <div id="vcomments"></div>
   <script defer src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-  <script defer src="//github.com/DesertsP/Valine/releases/download/v1.2.0/Valine.min.js"></script>
+  <script defer src="//unpkg.com/valine/dist/Valine.min.js"></script>
 
   <script type="text/javascript">
     var notify = 'false' === 'true';
@@ -274,10 +274,6 @@ gzip Align.vba.gz  #解压文件</code></pre><p>在/.vim/目录下</p>
       });
       oldLoad && oldLoad();
     };
-	    $(document).ready(load_valine);
-		    $(document).on('pjax:complete', function() {
-			      load_valine();
-				      });
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://valine.js.org" target="_blank" rel="nofollow noopener noopener">comments
       powered by Valine.</a></noscript>
