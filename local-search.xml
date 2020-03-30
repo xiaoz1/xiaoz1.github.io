@@ -48,10 +48,14 @@
       
       <category>Linux</category>
       
+      <category>centos</category>
+      
     </categories>
     
     
     <tags>
+      
+      <tag>centos</tag>
       
       <tag>linux</tag>
       

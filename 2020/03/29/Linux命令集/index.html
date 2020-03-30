@@ -169,7 +169,7 @@
           <div class="post-content mx-auto" id="post">
             
               <p
-                class="note note-warning">本文最后更新于：星期日, 三月 29日 2020, 4:10 下午</p>
+                class="note note-warning">本文最后更新于：星期一, 三月 30日 2020, 2:31 下午</p>
             
             <div class="markdown-body">
               <h4 id="系统信息"><a href="#系统信息" class="headerlink" title="系统信息"></a>系统信息</h4><pre><code>arch                 # 显示机器的处理器架构
@@ -366,11 +366,16 @@ firewall-cmd --reload    #重启防火墙(修改配置后要重启防火墙)</co
                       <a class="hover-with-bg" href="/categories/Linux/">Linux</a>
                       &nbsp;
                     
+                      <a class="hover-with-bg" href="/categories/Linux/centos/">centos</a>
+                      &nbsp;
+                    
                   </span>&nbsp;&nbsp;
                 
                 
                   <span>
                 <i class="iconfont icon-tag"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/centos/">centos</a>
                     
                       <a class="hover-with-bg" href="/tags/linux/">linux</a>
                     
@@ -406,6 +411,43 @@ firewall-cmd --reload    #重启防火墙(修改配置后要重启防火墙)</co
               
             </div>
 
+              
+                <!-- Comments -->
+                <div class="comments" id="comments">
+                  
+                  
+  <div id="vcomments"></div>
+  <script defer src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script defer src="//github.com/DesertsP/Valine/releases/download/v1.2.0/Valine.min.js"></script>
+
+  <script type="text/javascript">
+    var notify = 'false' === 'true';
+    var verify = 'false' === 'true';
+    var oldLoad = window.onload;
+    window.onload = function () {
+      new Valine({
+        el: '#vcomments',
+        notify: notify,
+        verify: verify,
+        app_id: "8iioS2vGGglRgDxIdS0WxeJf-gzGzoHsz",
+        app_key: "x5rlNImtTGoAF9s2bWQnuQ2i",
+        placeholder: "说点什么",
+        avatar: "/retro",
+        meta: ['nick', 'mail', 'link'],
+        pageSize: "10",
+      });
+      oldLoad && oldLoad();
+    };
+	    $(document).ready(load_valine);
+		    $(document).on('pjax:complete', function() {
+			      load_valine();
+				      });
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://valine.js.org" target="_blank" rel="nofollow noopener noopener">comments
+      powered by Valine.</a></noscript>
+
+
+                </div>
               
           </div>
         </div>
