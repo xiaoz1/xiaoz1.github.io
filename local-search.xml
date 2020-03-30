@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title>vim添加Align插件</title>
+    <link href="/2020/03/30/vim%E6%B7%BB%E5%8A%A0Align%E6%8F%92%E4%BB%B6/"/>
+    <url>/2020/03/30/vim%E6%B7%BB%E5%8A%A0Align%E6%8F%92%E4%BB%B6/</url>
+    
+    <content type="html"><![CDATA[<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>在主目录创建.vim目录</p><pre><code>cdmkdir .vimvim .vimrc</code></pre><p>创建.vimrc配置文件，并添加以下内容</p><pre><code>set nocpfiletype plugin on</code></pre><p>进入.vim目录，下载vim Align插件包：<a href="https://www.vim.org/scripts/download_script.php?src_id=19633" target="_blank" rel="noopener">Align.vba.gz</a></p><pre><code>cd .vimwget https://www.vim.org/scripts/download_script.php?src_id=19633 -O Align.vba.gzgzip Align.vba.gz  #解压文件</code></pre><p>在/.vim/目录下</p><pre><code>vim Align.vba:so %:q</code></pre><h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p>以“#”号为例，图&lt;1&gt;为原文件格式<br><img src="https://cdn.jsdelivr.net/gh/xiaoz1/mycdn/img/vimalign1.png" srcset="/img/loading.gif" alt="vimAlign示例原文档"><br>按<kbd>Esc</kbd>进入命令模式，按<kbd>Shift</kbd>+<kbd>v</kbd>，选中全部或者你需要处理的部分内容，按<kbd>Shift</kbd>+<kbd>;</kbd>，输入“Align<kbd>空格</kbd>#”按<kbd>Enter</kbd>确认。<font color=red>注：区别大小写</font></p><blockquote><p>: ‘&lt;,’&gt;Align #</p></blockquote><p>处理结果如图&lt;2&gt;<br><img src="https://cdn.jsdelivr.net/gh/xiaoz1/mycdn/img/vimalign2.png" srcset="/img/loading.gif" alt="vimAlign示例修改后"></p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Linux命令集</title>
     <link href="/2020/03/29/Linux%E5%91%BD%E4%BB%A4%E9%9B%86/"/>
     <url>/2020/03/29/Linux%E5%91%BD%E4%BB%A4%E9%9B%86/</url>
