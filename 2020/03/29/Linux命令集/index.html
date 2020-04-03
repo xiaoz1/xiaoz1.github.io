@@ -418,7 +418,7 @@ firewall-cmd --reload    #重启防火墙(修改配置后要重启防火墙)</co
                   
   <div id="vcomments"></div>
   <script defer src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-  <script defer src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  <script defer src="/js/Valine.min.js"></script>
 
   <script type="text/javascript">
     var notify = 'false' === 'true';
@@ -431,6 +431,8 @@ firewall-cmd --reload    #重启防火墙(修改配置后要重启防火墙)</co
         verify: verify,
         app_id: "8iioS2vGGglRgDxIdS0WxeJf-gzGzoHsz",
         app_key: "x5rlNImtTGoAF9s2bWQnuQ2i",
+        emoticon_url: 'https://cloud.panjunwen.com/alu',
+        emoticon_list: ["喷血.png","狂汗.png","不说话.png","汗.png","坐等.png","献花.png","不高兴.png","中刀.png","害羞.png"],
         placeholder: "说点什么",
         avatar: "/retro",
         meta: ['nick', 'mail', 'link'],
@@ -438,6 +440,10 @@ firewall-cmd --reload    #重启防火墙(修改配置后要重启防火墙)</co
       });
       oldLoad && oldLoad();
     };
+    $(document).ready(load_valine);
+    $(document).on('pjax:complete', function() {
+      load_valine();
+    });
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://valine.js.org" target="_blank" rel="nofollow noopener noopener">comments
       powered by Valine.</a></noscript>
