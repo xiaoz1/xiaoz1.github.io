@@ -133,7 +133,7 @@
                   
                   <span class="post-meta">
                     <i class="far fa-chart-bar"></i>
-                    2.7k 字
+                    2.6k 字
                   </span>
                 
 
@@ -172,7 +172,8 @@
                 class="note note-warning">本文最后更新于：星期三, 四月 1日 2020, 12:06 中午</p>
             
             <div class="markdown-body">
-              <h4 id="系统信息"><a href="#系统信息" class="headerlink" title="系统信息"></a>系统信息</h4><pre><code>arch                 # 显示机器的处理器架构
+              <h4 id="系统信息"><a class="markdownIt-Anchor" href="#系统信息"></a> 系统信息</h4>
+<pre class="highlight"><code class="">arch                 # 显示机器的处理器架构
 uname -m             # 显示机器的处理器架构
 uname -r             # 显示正在使用的内核版本
 dmidecode -q         # 显示硬件系统部件 - (SMBIOS / DMI)
@@ -190,14 +191,20 @@ lsusb -tv            # 显示 USB 设备
 date                 # 显示系统日期
 cal 2020             # 显示2020年的日历表
 date 032912462020.00 # 设置日期和时间 - 月日时分年.秒
-clock -w             # 将时间修改保存到 BIOS</code></pre><h4 id="系统的关机、重启以及登出"><a href="#系统的关机、重启以及登出" class="headerlink" title="系统的关机、重启以及登出"></a>系统的关机、重启以及登出</h4><pre><code>shutdown -h now           # 关闭系统
+clock -w             # 将时间修改保存到 BIOS
+</code></pre>
+<h4 id="系统的关机-重启以及登出"><a class="markdownIt-Anchor" href="#系统的关机-重启以及登出"></a> 系统的关机、重启以及登出</h4>
+<pre class="highlight"><code class="">shutdown -h now           # 关闭系统
 init 0                    # 关闭系统
 telinit 0                 # 关闭系统
 shutdown -h hours:minutes # 按预定时间关闭系统
 shutdown -c               # 取消按预定时间关闭系统
 shutdown -r now           # 重启
 reboot                    # 重启
-logout                    # 注销</code></pre><h4 id="文件与目录"><a href="#文件与目录" class="headerlink" title="文件与目录"></a>文件与目录</h4><pre><code>cd /home                  # 进入 &#39;/ home&#39; 目录&#39;
+logout                    # 注销
+</code></pre>
+<h4 id="文件与目录"><a class="markdownIt-Anchor" href="#文件与目录"></a> 文件与目录</h4>
+<pre class="highlight"><code class="">cd /home                  # 进入 '/ home' 目录'
 cd ..                     # 返回上一级目录
 cd ../..                  # 返回上两级目录
 cd                        # 进入个人的主目录
@@ -211,12 +218,12 @@ ls -a                     # 显示隐藏文件
 ls *[0-9]*                # 显示包含数字的文件名和目录名
 tree                      # 显示文件和目录由根目录开始的树形结构
 lstree                    # 显示文件和目录由根目录开始的树形结构
-mkdir dir1                # 创建一个叫做 &#39;dir1&#39; 的目录&#39;
+mkdir dir1                # 创建一个叫做 'dir1' 的目录'
 mkdir dir1 dir2           # 同时创建两个目录
 mkdir -p /tmp/dir1/dir2   # 创建一个目录树
-rm -f file1               # 删除一个叫做 &#39;file1&#39; 的文件&#39;
-rmdir dir1                # 删除一个叫做 &#39;dir1&#39; 的目录&#39;
-rm -rf dir1               # 删除一个叫做 &#39;dir1&#39; 的目录并同时删除其内容
+rm -f file1               # 删除一个叫做 'file1' 的文件'
+rmdir dir1                # 删除一个叫做 'dir1' 的目录'
+rm -rf dir1               # 删除一个叫做 'dir1' 的目录并同时删除其内容
 rm -rf dir1 dir2          # 同时删除两个目录及它们的内容
 mv dir1 new_dir           # 重命名/移动 一个目录
 cp file1 file2            # 复制一个文件
@@ -227,26 +234,32 @@ cp -r dir1 dir2           # 复制一个目录及子目录
 ln -s file1 lnk1          # 创建一个指向文件或目录的软链接
 ln file1 lnk1             # 创建一个指向文件或目录的物理链接
 touch -t 0712250000 file1 # 修改一个文件或目录的时间戳 - (YYMMDDhhmm)
-iconv -l                  # 列出已知的编码</code></pre><h4 id="文件搜索"><a href="#文件搜索" class="headerlink" title="文件搜索"></a>文件搜索</h4><pre><code>find / -name file1                          # 从 &#39;/&#39; 开始进入根文件系统搜索文件和目录
-find / -user user1                          # 搜索属于用户 &#39;user1&#39; 的文件和目录
-find /home/user1 -name \*.bin               # 在目录 &#39;/ home/user1&#39; 中搜索带有&#39;.bin&#39; 结尾的文件
+iconv -l                  # 列出已知的编码
+</code></pre>
+<h4 id="文件搜索"><a class="markdownIt-Anchor" href="#文件搜索"></a> 文件搜索</h4>
+<pre class="highlight"><code class="">find / -name file1                          # 从 '/' 开始进入根文件系统搜索文件和目录
+find / -user user1                          # 搜索属于用户 'user1' 的文件和目录
+find /home/user1 -name \*.bin               # 在目录 '/ home/user1' 中搜索带有'.bin' 结尾的文件
 find /usr/bin -type f -atime +100           # 搜索在过去100天内未被使用过的执行文件
 find /usr/bin -type f -mtime -10            # 搜索在10天内被创建或者修改过的文件
-find / -name \*.rpm -exec chmod 755 &#39;{}&#39; \; # 搜索以 &#39;.rpm&#39; 结尾的文件并定义其权限
-find / -xdev -name \*.rpm                   # 搜索以 &#39;.rpm&#39; 结尾的文件，忽略光驱、捷盘等可移动设备
-locate \*.ps                                # 寻找以 &#39;.ps&#39; 结尾的文件 - 先运行 &#39;updatedb&#39; 命令
+find / -name \*.rpm -exec chmod 755 '{}' \; # 搜索以 '.rpm' 结尾的文件并定义其权限
+find / -xdev -name \*.rpm                   # 搜索以 '.rpm' 结尾的文件，忽略光驱、捷盘等可移动设备
+locate \*.ps                                # 寻找以 '.ps' 结尾的文件 - 先运行 'updatedb' 命令
 whereis halt                                # 显示一个二进制文件、源码或man的位置
-which halt                                  # 显示一个二进制文件或可执行文件的完整路径</code></pre><h4 id="打包压缩与解压"><a href="#打包压缩与解压" class="headerlink" title="打包压缩与解压"></a>打包压缩与解压</h4><pre><code>bunzip2 file1.bz2                     # 解压一个叫做 &#39;file1.bz2&#39;的文件
-bzip2 file1                           # 压缩一个叫做 &#39;file1&#39; 的文件
-gunzip file1.gz                       # 解压一个叫做 &#39;file1.gz&#39;的文件
-gzip file1                            # 压缩一个叫做 &#39;file1&#39;的文件
+which halt                                  # 显示一个二进制文件或可执行文件的完整路径
+</code></pre>
+<h4 id="打包压缩与解压"><a class="markdownIt-Anchor" href="#打包压缩与解压"></a> 打包压缩与解压</h4>
+<pre class="highlight"><code class="">bunzip2 file1.bz2                     # 解压一个叫做 'file1.bz2'的文件
+bzip2 file1                           # 压缩一个叫做 'file1' 的文件
+gunzip file1.gz                       # 解压一个叫做 'file1.gz'的文件
+gzip file1                            # 压缩一个叫做 'file1'的文件
 gzip -9 file1                         # 最大程度压缩
-rar a file1.rar test_file             # 创建一个叫做 &#39;file1.rar&#39; 的包
-rar a file1.rar file1 file2 dir1      # 同时压缩 &#39;file1&#39;, &#39;file2&#39; 以及目录 &#39;dir1&#39;
+rar a file1.rar test_file             # 创建一个叫做 'file1.rar' 的包
+rar a file1.rar file1 file2 dir1      # 同时压缩 'file1', 'file2' 以及目录 'dir1'
 rar x file1.rar                       # 解压rar包
 unrar x file1.rar                     # 解压rar包
 tar -cvf archive.tar file1            # 创建一个非压缩的 tarball
-tar -cvf archive.tar file1 file2 dir1 # 创建一个包含了 &#39;file1&#39;, &#39;file2&#39; 以及 &#39;dir1&#39;的档案文件
+tar -cvf archive.tar file1 file2 dir1 # 创建一个包含了 'file1', 'file2' 以及 'dir1'的档案文件
 tar -tf archive.tar                   # 显示一个包中的内容
 tar -xvf archive.tar                  # 释放一个包
 tar -xvf archive.tar -C /tmp          # 将压缩包释放到 /tmp目录下
@@ -256,8 +269,11 @@ tar -cvfz archive.tar.gz dir1         # 创建一个gzip格式的压缩包
 tar -zxvf archive.tar.gz              # 解压一个gzip格式的压缩包
 zip file1.zip file1                   # 创建一个zip格式的压缩包
 zip -r file1.zip file1 file2 dir1     # 将几个文件和目录同时压缩成一个zip格式的压缩包
-unzip file1.zip                       # 解压一个zip格式压缩包</code></pre><h4 id="挂载"><a href="#挂载" class="headerlink" title="挂载"></a>挂载</h4><pre><code>mount /dev/hda2 /mnt/hda2                                                  # 挂载一个叫做hda2的盘 - 确定目录 &#39;/ mnt/hda2&#39; 已经存在
-umount /dev/hda2                                                           # 卸载一个叫做hda2的盘 - 先从挂载点 &#39;/ mnt/hda2&#39; 退出
+unzip file1.zip                       # 解压一个zip格式压缩包
+</code></pre>
+<h4 id="挂载"><a class="markdownIt-Anchor" href="#挂载"></a> 挂载</h4>
+<pre class="highlight"><code class="">mount /dev/hda2 /mnt/hda2                                                  # 挂载一个叫做hda2的盘 - 确定目录 '/ mnt/hda2' 已经存在
+umount /dev/hda2                                                           # 卸载一个叫做hda2的盘 - 先从挂载点 '/ mnt/hda2' 退出
 fuser -km /mnt/hda2                                                        # 当设备繁忙时强制卸载
 umount -n /mnt/hda2                                                        # 运行卸载操作而不写入 /etc/mtab 文件- 当文件为只读或当磁盘写满时非常有用
 mount /dev/fd0 /mnt/floppy                                                 # 挂载一个软盘
@@ -267,22 +283,31 @@ mount /dev/hdb /mnt/cdrecorder                                             # 挂
 mount -o loop file.iso /mnt/cdrom                                          # 挂载一个文件或ISO镜像文件
 mount -t vfat /dev/hda5 /mnt/hda5                                          # 挂载一个Windows FAT32文件系统
 mount /dev/sda1 /mnt/usbdisk                                               # 挂载一个usb 捷盘或闪存设备
-mount -t smbfs -o username=user,password=pass //WinClient/share /mnt/share # 挂载一个windows网络共享</code></pre><h4 id="磁盘空间"><a href="#磁盘空间" class="headerlink" title="磁盘空间"></a>磁盘空间</h4><pre><code>df -h               # 显示已经挂载的分区列表
+mount -t smbfs -o username=user,password=pass //WinClient/share /mnt/share # 挂载一个windows网络共享
+</code></pre>
+<h4 id="磁盘空间"><a class="markdownIt-Anchor" href="#磁盘空间"></a> 磁盘空间</h4>
+<pre class="highlight"><code class="">df -h               # 显示已经挂载的分区列表
 ls -lSr |more       # 以尺寸大小排列文件和目录
-du -sh dir1         # 估算目录 &#39;dir1&#39; 已经使用的磁盘空间&#39;
-du -sk * | sort -rn # 以容量大小为依据依次显示文件和目录的大小</code></pre><h4 id="用户与群组"><a href="#用户与群组" class="headerlink" title="用户与群组"></a>用户与群组</h4><pre><code>groupadd group_name                                                   # 创建一个新用户组
+du -sh dir1         # 估算目录 'dir1' 已经使用的磁盘空间'
+du -sk * | sort -rn # 以容量大小为依据依次显示文件和目录的大小
+</code></pre>
+<h4 id="用户与群组"><a class="markdownIt-Anchor" href="#用户与群组"></a> 用户与群组</h4>
+<pre class="highlight"><code class="">groupadd group_name                                                   # 创建一个新用户组
 groupdel group_name                                                   # 删除一个用户组
 groupmod -n new_group_name old_group_name                             # 重命名一个用户组
 useradd -c &quot;Name Surname &quot; -g admin -d /home/user1 -s /bin/bash user1 # 创建一个属于 &quot;admin&quot; 用户组的用户
 useradd user1                                                         # 创建一个新用户
-userdel -r user1                                                      # 删除一个用户 ( &#39;-r&#39; 排除主目录)
+userdel -r user1                                                      # 删除一个用户 ( '-r' 排除主目录)
 usermod -c &quot;User FTP&quot; -g system -d /ftp/user1 -s /bin/nologin user1   # 修改用户属性
 passwd                                                                # 修改口令
 passwd user1                                                          # 修改一个用户的口令 (只允许root执行)
 chage -E 2005-12-31 user1                                             # 设置用户口令的失效期限
-pwck                                                                  # 检查 &#39;/etc/passwd&#39; 的文件格式和语法修正以及存在的用户
-grpck                                                                 # 检查 &#39;/etc/passwd&#39; 的文件格式和语法修正以及存在的群组
-newgrp group_name                                                     # 登陆进一个新的群组以改变新创建文件的预设群组</code></pre><h4 id="systemctl"><a href="#systemctl" class="headerlink" title="systemctl"></a>systemctl</h4><pre><code>systemctl unmask firewalld              #执行命令，即可实现取消服务的锁定
+pwck                                                                  # 检查 '/etc/passwd' 的文件格式和语法修正以及存在的用户
+grpck                                                                 # 检查 '/etc/passwd' 的文件格式和语法修正以及存在的群组
+newgrp group_name                                                     # 登陆进一个新的群组以改变新创建文件的预设群组
+</code></pre>
+<h4 id="systemctl"><a class="markdownIt-Anchor" href="#systemctl"></a> systemctl</h4>
+<pre class="highlight"><code class="">systemctl unmask firewalld              #执行命令，即可实现取消服务的锁定
 systemctl mask firewalld                #下次需要锁定该服务时执行
 systemctl start firewalld.service       #启动防火墙
 systemctl stop firewalld.service        #停止防火墙
@@ -293,7 +318,10 @@ systemctl enable firewalld.service      #在开机时启用服务
 systemctl disable firewalld.service     #在开机时禁用服务
 systemctl is-enabled firewalld.service  #查看服务是否开机启动
 systemctl list-unit-filesgrep enabled   #查看已启动的服务列表
-systemctl --failed                      #查看启动失败的服务列表</code></pre><h4 id="firewall-cmd"><a href="#firewall-cmd" class="headerlink" title="firewall-cmd"></a>firewall-cmd</h4><pre><code>firewall-cmd --state                         #查看防火墙状态
+systemctl --failed                      #查看启动失败的服务列表
+</code></pre>
+<h4 id="firewall-cmd"><a class="markdownIt-Anchor" href="#firewall-cmd"></a> firewall-cmd</h4>
+<pre class="highlight"><code class="">firewall-cmd --state                         #查看防火墙状态
 firewall-cmd --reload                        #更新防火墙规则
 firewall-cmd --state                         #查看防火墙状态
 firewall-cmd --reload                        #重载防火墙规则
@@ -354,7 +382,9 @@ firewall-cmd  --zone=public --add-port=65001-65010/tcp --permanent   #永久增�
 firewall-cmd --query-port=8080/tcp               #查询端口是否开放
 firewall-cmd --permanent --add-port=80/tcp       #开放80端口
 firewall-cmd --permanent --remove-port=8080/tcp  #移除端口
-firewall-cmd --reload    #重启防火墙(修改配置后要重启防火墙)</code></pre>
+firewall-cmd --reload    #重启防火墙(修改配置后要重启防火墙)
+</code></pre>
+
             </div>
             <hr>
             <div>

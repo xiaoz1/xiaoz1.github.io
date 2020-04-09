@@ -17,7 +17,7 @@
   <meta name="description" content="瞎鸡把弄的Bolg">
   <meta name="author" content="Little Wisdom">
   <meta name="keywords" content="">
-  <title>vim添加Align对齐插件 - xiaoz-Blog</title>
+  <title>OSI参考模型 - xiaoz-Blog</title>
 
   <link  rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/5.12.1/css/all.min.css" />
 <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
@@ -124,7 +124,7 @@
               
                 <p class="mt-3 post-meta">
                   <i class="fas fa-calendar-alt" aria-hidden="true"></i>
-                  星期一, 三月 30日 2020, 11:54 中午
+                  星期日, 四月 5日 2020, 7:51 晚上
                 </p>
               
 
@@ -133,7 +133,7 @@
                   
                   <span class="post-meta">
                     <i class="far fa-chart-bar"></i>
-                    324 字
+                    1.8k 字
                   </span>
                 
 
@@ -141,7 +141,7 @@
                   
                   <span class="post-meta">
                       <i class="far fa-clock"></i>
-                      1 分钟
+                      6 分钟
                   </span>
                 
 
@@ -169,72 +169,52 @@
           <div class="post-content mx-auto" id="post">
             
               <p
-                class="note note-warning">本文最后更新于：星期一, 三月 30日 2020, 1:49 下午</p>
+                class="note note-warning">本文最后更新于：星期四, 四月 9日 2020, 5:03 下午</p>
             
             <div class="markdown-body">
-              <p>    开始用Blog记录一些东西的时候，其中代码后面会加入注释，但是代码长短不一也就导致了注释参差不齐；作为一个小白，根本不知道如何快速的把它们对齐，所以求教了大佬们，大佬们上来就是Align插件，于是我就开始baidu\google找怎么安装这个vim上的插件，但是并没有搜到一个我想要的结果，东拼西凑总算装上了，这时候当然要记录下来阿！</p>
-<blockquote>
-<p>PS:其实是有官方的，奈何我的小学鸡文化水平并没有办法看明白<a href="https://www.vim.org/scripts/script.php?script_id=294" target="_blank" rel="noopener">vim官方Align插件</a></p>
-</blockquote>
-<h2 id="安装"><a class="markdownIt-Anchor" href="#安装"></a> 安装</h2>
-<p>在主目录创建.vim目录</p>
-<pre class="highlight"><code class="">cd
-mkdir .vim
-vim .vimrc
-</code></pre>
-<p>创建.vimrc配置文件，并添加以下内容</p>
-<pre class="highlight"><code class="">set nocp
-filetype plugin on
-</code></pre>
-<p>进入.vim目录，下载vim Align插件包：<a href="https://www.vim.org/scripts/download_script.php?src_id=19633" target="_blank" rel="noopener">Align.vba.gz</a></p>
-<pre class="highlight"><code class="">cd .vim
-wget https://www.vim.org/scripts/download_script.php?src_id=19633 -O Align.vba.gz
-gzip Align.vba.gz  #解压文件
-</code></pre>
-<p>在/.vim/目录下</p>
-<pre class="highlight"><code class="">vim Align.vba
-:so %
-:q
-</code></pre>
-<h2 id="使用"><a class="markdownIt-Anchor" href="#使用"></a> 使用</h2>
-<p>以“#”号为例，图&lt;1&gt;为原文件格式<br />
-<img src="https://cdn.jsdelivr.net/gh/xiaoz1/mycdn/img/vimalign1.png" srcset="/img/loading.gif" alt="vimAlign示例原文档" /><br />
-按<kbd>Esc</kbd>进入命令模式，按<kbd>Shift</kbd>+<kbd>v</kbd>，选中全部或者你需要处理的部分内容，按<kbd>Shift</kbd>+<kbd>;</kbd>，输入“Align<kbd>空格</kbd>#”按<kbd>Enter</kbd>确认。<font color=red>注：区别大小写</font></p>
-<blockquote>
-<p>: ‘&lt;,’&gt;Align #</p>
-</blockquote>
-<p>处理结果如图&lt;2&gt;<br />
-<img src="https://cdn.jsdelivr.net/gh/xiaoz1/mycdn/img/vimalign2.png" srcset="/img/loading.gif" alt="vimAlign示例修改后" /></p>
+              <h2 id="介绍"><a class="markdownIt-Anchor" href="#介绍"></a> 介绍</h2>
+<p>    <strong>开放式系统互联</strong> （英语：Open System Interconnection，缩写为 OSI），一般都叫OSI参考模型，是 <strong>国际标准化组织（ISO，International Standards Organization）</strong> 在1985年研究的网络互连模型。<br />
+    <strong>ISO</strong> 为了更好的使网络应用更为普及，推出了 <strong>OSI参考模型</strong> 。其含义就是推荐所有公司使用这个规范来控制网络。这样所有公司都有相同的规范，就能互联了。</p>
+<h2 id="层次划分"><a class="markdownIt-Anchor" href="#层次划分"></a> 层次划分</h2>
+<p>    OSI参考模型本身并不是一个网络体系结构，因为它并没有定义每一层的服务和所用的协议。它只是指明了每一层应该做些什么事。<br />
+    OSI将计算机网络体系结构(architecture）划分为以下七层,每一层实现各自的功能和协议，并完成与相邻层的接口通信。OSI的服务定义详细说明了各层所提供的服务。某一层的服务就是该层及其下各层的一种能力，它通过接口提供给更高一层。各层所提供的服务与这些服务是怎么实现的无关：</p>
+<p class="note note-primary">
+<font color="#87CEFA"><strong>应用层(Application)</strong>: 为应用程序提供服务</font></br>
+<font color="#63B8FF"><strong>表示层(Presentation)</strong>: 数据编码、转化、压缩、解压、加密、解密</font></br>
+<font color="#5CACEE"><strong>会话层(Session)</strong>: 建立、管理和维护会话</font></br>
+<font color="#4169E1"><strong>传输层(Transport)</strong>: 建立、管理和维护端到端的连接</font></br>
+<font color="#3CB371"><strong>网络层(Network)</strong>: IP地址及路由选择</font></br>
+<font color="#228B22"><strong>数据链路层(Data Link)</strong>: 提供介质访问和链路管理</font></br>
+<font color="#006400"><strong>物理层(Physical)</strong>: 将数据转换为可通过物理介质传送的电子信号</font></p>
+<h2 id="各层功能定义"><a class="markdownIt-Anchor" href="#各层功能定义"></a> 各层功能定义</h2>
+<p>    这里我们只对OSI各层进行功能上的大概阐述，不详细深究，因为每一层实际都是一个复杂的层。从最顶层——<strong>应用层</strong> 开始介绍。整个过程以公司A和公司B的一次商业报价单发送为例子进行讲解。</p>
+<h3 id="应用层"><a class="markdownIt-Anchor" href="#应用层"></a> 应用层</h3>
+<p>    OSI参考模型中最靠近用户的一层，是为计算机用户提供应用接口，也为用户直接提供各种网络服务。我们常见应用层的网络服务协议有：HTTP，HTTPS，FTP，POP3、SMTP等。</p>
+<p class="note note-info">实际公司A的老板就是我们所述的用户，而他要发送的商业报价单，就是应用层提供的一种网络服务，当然，老板也可以选择其他服务，比如说，发一份商业合同，发一份询价单，等等。</p>
+<h3 id="表示层"><a class="markdownIt-Anchor" href="#表示层"></a> 表示层</h3>
+<p>    表示层提供各种用于应用层数据的编码和转换功能，确保一个系统的应用层发送的数据能被另一个系统的应用层识别。如果必要，该层可提供一种标准表示形式，用于将计算机内部的多种数据格式转换成通信中采用的标准表示形式。数据压缩和加密也是表示层可提供的转换功能之一。</p>
+<p class="note note-info">由于公司A和公司B是不同国家的公司，他们之间的商定统一用英语作为交流的语言，所以此时表示层（公司的文秘），就是将应用层的传递信息转翻译成英语。同时为了防止别的公司看到，公司A的人也会对这份报价单做一些加密的处理。这就是表示的作用，将应用层的数据转换翻译等。</p>
+<h3 id="会话层"><a class="markdownIt-Anchor" href="#会话层"></a> 会话层</h3>
+<p>    会话层就是负责建立、管理和终止表示层实体之间的通信会话。该层的通信由不同设备中的应用程序之间的服务请求和响应组成。</p>
+<p class="note note-info">会话层的同事拿到表示层的同事转换后资料，（会话层的同事类似公司的外联部），会话层的同事那里可能会掌握本公司与其他好多公司的联系方式，这里公司就是实际传递过程中的实体。他们要管理本公司与外界好多公司的联系会话。当接收到表示层的数据后，会话层将会建立并记录本次会话，他首先要找到公司B的地址信息，然后将整份资料放进信封，并写上地址和联系方式。准备将资料寄出。等到确定公司B接收到此份报价单后，此次会话就算结束了，外联部的同事就会终止此次会话。</p>
+<h3 id="传输层"><a class="markdownIt-Anchor" href="#传输层"></a> 传输层</h3>
+<p>    传输层建立了主机端到端的链接，传输层的作用是为上层协议提供端到端的可靠和透明的数据传输服务，包括处理差错控制和流量控制等问题。该层向高层屏蔽了下层数据通信的细节，使高层用户看到的只是在两个传输实体间的一条主机到主机的、可由用户控制和设定的、可靠的数据通路。我们通常说的，TCP UDP就是在这一层。端口号既是这里的“端”。</p>
+<p class="note note-info">传输层就相当于公司中的负责快递邮件收发的人，公司自己的投递员，他们负责将上一层的要寄出的资料投递到快递公司或邮局。</p>
+<h3 id="网络层"><a class="markdownIt-Anchor" href="#网络层"></a> 网络层</h3>
+<p>    本层通过IP寻址来建立两个节点之间的连接，为源端的运输层送来的分组，选择合适的路由和交换节点，正确无误地按照地址传送给目的端的运输层。就是通常说的IP层。这一层就是我们经常说的IP协议层。IP协议是Internet的基础。</p>
+<p class="note note-info">网络层就相当于快递公司庞大的快递网络，全国不同的集散中心，比如说，从深圳发往北京的顺丰快递（陆运为例啊，空运好像直接就飞到北京了），首先要到顺丰的深圳集散中心，从深圳集散中心再送到武汉集散中心，从武汉集散中心再寄到北京顺义集散中心。这个每个集散中心，就相当于网络中的一个IP节点。</p>
+<h3 id="数据链路层"><a class="markdownIt-Anchor" href="#数据链路层"></a> 数据链路层</h3>
+<p>    将比特组合成字节,再将字节组合成帧,使用链路层地址 (以太网使用MAC地址)来访问介质,并进行差错检测。数据链路层又分为2个子层：逻辑链路控制子层（LLC）和媒体访问控制子层（MAC）。MAC子层处理CSMA/CD算法、数据出错校验、成帧等；LLC子层定义了一些字段使上次协议能共享数据链路层。 在实际使用中，LLC子层并非必需的。</p>
+<p class="note note-info">无合适例子</p>
+<h3 id="物理层"><a class="markdownIt-Anchor" href="#物理层"></a> 物理层</h3>
+<p>    实际最终信号的传输是通过物理层实现的。通过物理介质传输比特流。规定了电平、速度和电缆针脚。常用设备有（各种物理设备）集线器、中继器、调制解调器、网线、双绞线、同轴电缆。这些都是物理层的传输介质。</p>
+<p class="note note-info">快递寄送过程中的交通工具，就相当于我们的物理层，例如汽车，火车，飞机，船。</p>
 
             </div>
             <hr>
             <div>
               <p>
                 
-                  <span>
-                <i class="iconfont icon-inbox"></i>
-                    
-                      <a class="hover-with-bg" href="/categories/Linux/">Linux</a>
-                      &nbsp;
-                    
-                      <a class="hover-with-bg" href="/categories/Linux/centos/">centos</a>
-                      &nbsp;
-                    
-                  </span>&nbsp;&nbsp;
-                
-                
-                  <span>
-                <i class="iconfont icon-tag"></i>
-                    
-                      <a class="hover-with-bg" href="/tags/Linux/">Linux</a>
-                    
-                      <a class="hover-with-bg" href="/tags/centos/">centos</a>
-                    
-                      <a class="hover-with-bg" href="/tags/vim/">vim</a>
-                    
-                      <a class="hover-with-bg" href="/tags/vim%E6%8F%92%E4%BB%B6/">vim插件</a>
-                    
-                  </span>
                 
               </p>
               
@@ -245,18 +225,12 @@ gzip Align.vba.gz  #解压文件
                   <div class="post-prev col-6">
                     
                     
-                      <a href="/2020/04/05/OSI%E5%8F%82%E8%80%83%E6%A8%A1%E5%9E%8B/">
-                        <i class="fa fa-chevron-left"></i>
-                        <span class="hidden-mobile">OSI参考模型</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </div>
                   <div class="post-next col-6">
                     
                     
-                      <a href="/2020/03/29/Linux%E5%91%BD%E4%BB%A4%E9%9B%86/">
-                        <span class="hidden-mobile">Linux命令集</span>
+                      <a href="/2020/03/30/im%E6%B7%BB%E5%8A%A0Align%E6%8F%92%E4%BB%B6/">
+                        <span class="hidden-mobile">vim添加Align对齐插件</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="fa fa-chevron-right"></i>
                       </a>
@@ -468,7 +442,7 @@ gzip Align.vba.gz  #解压文件
     var typed = new Typed('#subtitle', {
       strings: [
         '  ',
-        "vim添加Align对齐插件&nbsp;",
+        "OSI参考模型&nbsp;",
       ],
       cursorChar: "_",
       typeSpeed: 70,
