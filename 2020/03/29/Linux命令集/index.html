@@ -19,22 +19,25 @@
   <meta name="keywords" content="">
   <title>Linux命令集 - xiaoz-Blog</title>
 
-  <link  rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/5.12.1/css/all.min.css" />
-<link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
-<link  rel="stylesheet" href="https://cdn.staticfile.org/mdbootstrap/4.13.0/css/mdb.min.css" />
-<link  rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/3.0.1/github-markdown.min.css" />
-
-<link rel="stylesheet" href="//at.alicdn.com/t/font_1067060_qzomjdt8bmp.css">
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
+<link  rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/4.0.0/github-markdown.min.css" />
 
 
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.18.1/styles/github-gist.min.css" />
 
-  <link  rel="stylesheet" href="/lib/prettify/tomorrow-night.min.css" />
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_fmb4a04yx8h.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1763956_fn4jzu5k58f.css">
+
+
+
 
 <link  rel="stylesheet" href="/css/main.css" />
-
-
-  <link defer rel="stylesheet" href="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.css" />
-
 
 <!-- 自定义样式保持在最底部 -->
 
@@ -62,41 +65,46 @@
           
           
           
-          
           <li class="nav-item">
-            <a class="nav-link" href="/">首页</a>
+            <a class="nav-link" href="/">
+              <i class="iconfont icon-home-fill"></i>
+              首页</a>
           </li>
         
           
           
           
-          
           <li class="nav-item">
-            <a class="nav-link" href="/archives/">归档</a>
+            <a class="nav-link" href="/archives/">
+              <i class="iconfont icon-archive-fill"></i>
+              归档</a>
           </li>
         
           
           
           
-          
           <li class="nav-item">
-            <a class="nav-link" href="/categories/">分类</a>
+            <a class="nav-link" href="/categories/">
+              <i class="iconfont icon-category-fill"></i>
+              分类</a>
           </li>
         
           
           
           
-          
           <li class="nav-item">
-            <a class="nav-link" href="/tags/">标签</a>
+            <a class="nav-link" href="/tags/">
+              <i class="iconfont icon-tags-fill"></i>
+              标签</a>
           </li>
         
           
           
           
-          
           <li class="nav-item">
-            <a class="nav-link" href="/about/">关于</a>
+            <a class="nav-link" href="/about/">
+              <i class="iconfont icon-user-fill"></i>
+              关于</a>
           </li>
         
         
@@ -114,7 +122,7 @@
          style="background: url('https://cdn.jsdelivr.net/gh/xiaoz1/mycdn/img/post.jpg') no-repeat center center;
            background-size: cover;">
       <div class="full-bg-img">
-        <div class="mask rgba-black-light flex-center">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="container text-center white-text fadeInUp">
             <span class="h2" id="subtitle">
               
@@ -122,31 +130,36 @@
 
             
               
-                <p class="mt-3 post-meta">
-                  <i class="fas fa-calendar-alt" aria-hidden="true"></i>
-                  星期日, 三月 29日 2020, 12:22 中午
-                </p>
+                <div class="mt-3 post-meta">
+                  <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+                  <time datetime="2020-03-29 12:22">
+                    星期日, 三月 29日 2020, 12:22 中午
+                  </time>
+                </div>
               
 
-              <p class="mt-1">
+              <div class="mt-1">
                 
                   
-                  <span class="post-meta">
-                    <i class="far fa-chart-bar"></i>
-                    2.6k 字
+                  <span class="post-meta mr-2">
+                    <i class="iconfont icon-chart"></i>
+                    2.9k 字
                   </span>
                 
 
                 
                   
-                  <span class="post-meta">
-                      <i class="far fa-clock"></i>
-                      11 分钟
+                  <span class="post-meta mr-2">
+                      <i class="iconfont icon-clock-fill"></i>
+                    
+                    
+                    39
+                     分钟
                   </span>
                 
 
                 
-              </p>
+              </div>
             
           </div>
 
@@ -165,48 +178,44 @@
     <div class="d-none d-lg-block col-lg-2"></div>
     <div class="col-lg-8 nopadding-md">
       <div class="container nopadding-md" id="board-ctn">
-        <div class="py-5 z-depth-3" id="board">
+        <div class="py-5" id="board">
           <div class="post-content mx-auto" id="post">
             
-              <p
-                class="note note-warning">本文最后更新于：星期三, 四月 1日 2020, 12:06 中午</p>
+              <p class="note note-warning">
+                本文最后更新于：星期三, 四月 1日 2020, 12:06 中午
+              </p>
             
-            <div class="markdown-body">
-              <h4 id="系统信息"><a class="markdownIt-Anchor" href="#系统信息"></a> 系统信息</h4>
-<pre class="highlight"><code class="">arch                 # 显示机器的处理器架构
+            <article class="markdown-body">
+              <h4 id="系统信息"><a href="#系统信息" class="headerlink" title="系统信息"></a>系统信息</h4><pre><code class="hljs plain">arch                 # 显示机器的处理器架构
 uname -m             # 显示机器的处理器架构
 uname -r             # 显示正在使用的内核版本
-dmidecode -q         # 显示硬件系统部件 - (SMBIOS / DMI)
-hdparm -i /dev/hda   # 罗列一个磁盘的架构特性
-hdparm -tT /dev/sda  # 在磁盘上执行测试性读取操作
-cat /proc/cpuinfo    # 显示CPU info的信息
-cat /proc/interrupts # 显示中断
-cat /proc/meminfo    # 校验内存使用
-cat /proc/swaps      # 显示哪些swap被使用
-cat /proc/version    # 显示内核的版本
-cat /proc/net/dev    # 显示网络适配器及统计
-cat /proc/mounts     # 显示已加载的文件系统
+dmidecode -q         # 显示硬件系统部件 - (SMBIOS &#x2F; DMI)
+hdparm -i &#x2F;dev&#x2F;hda   # 罗列一个磁盘的架构特性
+hdparm -tT &#x2F;dev&#x2F;sda  # 在磁盘上执行测试性读取操作
+cat &#x2F;proc&#x2F;cpuinfo    # 显示CPU info的信息
+cat &#x2F;proc&#x2F;interrupts # 显示中断
+cat &#x2F;proc&#x2F;meminfo    # 校验内存使用
+cat &#x2F;proc&#x2F;swaps      # 显示哪些swap被使用
+cat &#x2F;proc&#x2F;version    # 显示内核的版本
+cat &#x2F;proc&#x2F;net&#x2F;dev    # 显示网络适配器及统计
+cat &#x2F;proc&#x2F;mounts     # 显示已加载的文件系统
 lspci -tv            # 罗列 PCI 设备
 lsusb -tv            # 显示 USB 设备
 date                 # 显示系统日期
 cal 2020             # 显示2020年的日历表
 date 032912462020.00 # 设置日期和时间 - 月日时分年.秒
-clock -w             # 将时间修改保存到 BIOS
-</code></pre>
-<h4 id="系统的关机-重启以及登出"><a class="markdownIt-Anchor" href="#系统的关机-重启以及登出"></a> 系统的关机、重启以及登出</h4>
-<pre class="highlight"><code class="">shutdown -h now           # 关闭系统
+clock -w             # 将时间修改保存到 BIOS</code></pre>
+<h4 id="系统的关机、重启以及登出"><a href="#系统的关机、重启以及登出" class="headerlink" title="系统的关机、重启以及登出"></a>系统的关机、重启以及登出</h4><pre><code class="hljs plain">shutdown -h now           # 关闭系统
 init 0                    # 关闭系统
 telinit 0                 # 关闭系统
 shutdown -h hours:minutes # 按预定时间关闭系统
 shutdown -c               # 取消按预定时间关闭系统
 shutdown -r now           # 重启
 reboot                    # 重启
-logout                    # 注销
-</code></pre>
-<h4 id="文件与目录"><a class="markdownIt-Anchor" href="#文件与目录"></a> 文件与目录</h4>
-<pre class="highlight"><code class="">cd /home                  # 进入 '/ home' 目录'
+logout                    # 注销</code></pre>
+<h4 id="文件与目录"><a href="#文件与目录" class="headerlink" title="文件与目录"></a>文件与目录</h4><pre><code class="hljs plain">cd &#x2F;home                  # 进入 &#39;&#x2F; home&#39; 目录&#39;
 cd ..                     # 返回上一级目录
-cd ../..                  # 返回上两级目录
+cd ..&#x2F;..                  # 返回上两级目录
 cd                        # 进入个人的主目录
 cd ~user1                 # 进入个人的主目录
 cd -                      # 返回上次所在的目录
@@ -218,96 +227,84 @@ ls -a                     # 显示隐藏文件
 ls *[0-9]*                # 显示包含数字的文件名和目录名
 tree                      # 显示文件和目录由根目录开始的树形结构
 lstree                    # 显示文件和目录由根目录开始的树形结构
-mkdir dir1                # 创建一个叫做 'dir1' 的目录'
+mkdir dir1                # 创建一个叫做 &#39;dir1&#39; 的目录&#39;
 mkdir dir1 dir2           # 同时创建两个目录
-mkdir -p /tmp/dir1/dir2   # 创建一个目录树
-rm -f file1               # 删除一个叫做 'file1' 的文件'
-rmdir dir1                # 删除一个叫做 'dir1' 的目录'
-rm -rf dir1               # 删除一个叫做 'dir1' 的目录并同时删除其内容
+mkdir -p &#x2F;tmp&#x2F;dir1&#x2F;dir2   # 创建一个目录树
+rm -f file1               # 删除一个叫做 &#39;file1&#39; 的文件&#39;
+rmdir dir1                # 删除一个叫做 &#39;dir1&#39; 的目录&#39;
+rm -rf dir1               # 删除一个叫做 &#39;dir1&#39; 的目录并同时删除其内容
 rm -rf dir1 dir2          # 同时删除两个目录及它们的内容
-mv dir1 new_dir           # 重命名/移动 一个目录
+mv dir1 new_dir           # 重命名&#x2F;移动 一个目录
 cp file1 file2            # 复制一个文件
-cp dir/* .                # 复制一个目录下的所有文件到当前工作目录
-cp -a /tmp/dir1 .         # 复制一个目录到当前工作目录
+cp dir&#x2F;* .                # 复制一个目录下的所有文件到当前工作目录
+cp -a &#x2F;tmp&#x2F;dir1 .         # 复制一个目录到当前工作目录
 cp -a dir1 dir2           # 复制一个目录
 cp -r dir1 dir2           # 复制一个目录及子目录
 ln -s file1 lnk1          # 创建一个指向文件或目录的软链接
 ln file1 lnk1             # 创建一个指向文件或目录的物理链接
 touch -t 0712250000 file1 # 修改一个文件或目录的时间戳 - (YYMMDDhhmm)
-iconv -l                  # 列出已知的编码
-</code></pre>
-<h4 id="文件搜索"><a class="markdownIt-Anchor" href="#文件搜索"></a> 文件搜索</h4>
-<pre class="highlight"><code class="">find / -name file1                          # 从 '/' 开始进入根文件系统搜索文件和目录
-find / -user user1                          # 搜索属于用户 'user1' 的文件和目录
-find /home/user1 -name \*.bin               # 在目录 '/ home/user1' 中搜索带有'.bin' 结尾的文件
-find /usr/bin -type f -atime +100           # 搜索在过去100天内未被使用过的执行文件
-find /usr/bin -type f -mtime -10            # 搜索在10天内被创建或者修改过的文件
-find / -name \*.rpm -exec chmod 755 '{}' \; # 搜索以 '.rpm' 结尾的文件并定义其权限
-find / -xdev -name \*.rpm                   # 搜索以 '.rpm' 结尾的文件，忽略光驱、捷盘等可移动设备
-locate \*.ps                                # 寻找以 '.ps' 结尾的文件 - 先运行 'updatedb' 命令
+iconv -l                  # 列出已知的编码</code></pre>
+<h4 id="文件搜索"><a href="#文件搜索" class="headerlink" title="文件搜索"></a>文件搜索</h4><pre><code class="hljs plain">find &#x2F; -name file1                          # 从 &#39;&#x2F;&#39; 开始进入根文件系统搜索文件和目录
+find &#x2F; -user user1                          # 搜索属于用户 &#39;user1&#39; 的文件和目录
+find &#x2F;home&#x2F;user1 -name \*.bin               # 在目录 &#39;&#x2F; home&#x2F;user1&#39; 中搜索带有&#39;.bin&#39; 结尾的文件
+find &#x2F;usr&#x2F;bin -type f -atime +100           # 搜索在过去100天内未被使用过的执行文件
+find &#x2F;usr&#x2F;bin -type f -mtime -10            # 搜索在10天内被创建或者修改过的文件
+find &#x2F; -name \*.rpm -exec chmod 755 &#39;&#123;&#125;&#39; \; # 搜索以 &#39;.rpm&#39; 结尾的文件并定义其权限
+find &#x2F; -xdev -name \*.rpm                   # 搜索以 &#39;.rpm&#39; 结尾的文件，忽略光驱、捷盘等可移动设备
+locate \*.ps                                # 寻找以 &#39;.ps&#39; 结尾的文件 - 先运行 &#39;updatedb&#39; 命令
 whereis halt                                # 显示一个二进制文件、源码或man的位置
-which halt                                  # 显示一个二进制文件或可执行文件的完整路径
-</code></pre>
-<h4 id="打包压缩与解压"><a class="markdownIt-Anchor" href="#打包压缩与解压"></a> 打包压缩与解压</h4>
-<pre class="highlight"><code class="">bunzip2 file1.bz2                     # 解压一个叫做 'file1.bz2'的文件
-bzip2 file1                           # 压缩一个叫做 'file1' 的文件
-gunzip file1.gz                       # 解压一个叫做 'file1.gz'的文件
-gzip file1                            # 压缩一个叫做 'file1'的文件
+which halt                                  # 显示一个二进制文件或可执行文件的完整路径</code></pre>
+<h4 id="打包压缩与解压"><a href="#打包压缩与解压" class="headerlink" title="打包压缩与解压"></a>打包压缩与解压</h4><pre><code class="hljs plain">bunzip2 file1.bz2                     # 解压一个叫做 &#39;file1.bz2&#39;的文件
+bzip2 file1                           # 压缩一个叫做 &#39;file1&#39; 的文件
+gunzip file1.gz                       # 解压一个叫做 &#39;file1.gz&#39;的文件
+gzip file1                            # 压缩一个叫做 &#39;file1&#39;的文件
 gzip -9 file1                         # 最大程度压缩
-rar a file1.rar test_file             # 创建一个叫做 'file1.rar' 的包
-rar a file1.rar file1 file2 dir1      # 同时压缩 'file1', 'file2' 以及目录 'dir1'
+rar a file1.rar test_file             # 创建一个叫做 &#39;file1.rar&#39; 的包
+rar a file1.rar file1 file2 dir1      # 同时压缩 &#39;file1&#39;, &#39;file2&#39; 以及目录 &#39;dir1&#39;
 rar x file1.rar                       # 解压rar包
 unrar x file1.rar                     # 解压rar包
 tar -cvf archive.tar file1            # 创建一个非压缩的 tarball
-tar -cvf archive.tar file1 file2 dir1 # 创建一个包含了 'file1', 'file2' 以及 'dir1'的档案文件
+tar -cvf archive.tar file1 file2 dir1 # 创建一个包含了 &#39;file1&#39;, &#39;file2&#39; 以及 &#39;dir1&#39;的档案文件
 tar -tf archive.tar                   # 显示一个包中的内容
 tar -xvf archive.tar                  # 释放一个包
-tar -xvf archive.tar -C /tmp          # 将压缩包释放到 /tmp目录下
+tar -xvf archive.tar -C &#x2F;tmp          # 将压缩包释放到 &#x2F;tmp目录下
 tar -cvfj archive.tar.bz2 dir1        # 创建一个bzip2格式的压缩包
 tar -jxvf archive.tar.bz2             # 解压一个bzip2格式的压缩包
 tar -cvfz archive.tar.gz dir1         # 创建一个gzip格式的压缩包
 tar -zxvf archive.tar.gz              # 解压一个gzip格式的压缩包
 zip file1.zip file1                   # 创建一个zip格式的压缩包
 zip -r file1.zip file1 file2 dir1     # 将几个文件和目录同时压缩成一个zip格式的压缩包
-unzip file1.zip                       # 解压一个zip格式压缩包
-</code></pre>
-<h4 id="挂载"><a class="markdownIt-Anchor" href="#挂载"></a> 挂载</h4>
-<pre class="highlight"><code class="">mount /dev/hda2 /mnt/hda2                                                  # 挂载一个叫做hda2的盘 - 确定目录 '/ mnt/hda2' 已经存在
-umount /dev/hda2                                                           # 卸载一个叫做hda2的盘 - 先从挂载点 '/ mnt/hda2' 退出
-fuser -km /mnt/hda2                                                        # 当设备繁忙时强制卸载
-umount -n /mnt/hda2                                                        # 运行卸载操作而不写入 /etc/mtab 文件- 当文件为只读或当磁盘写满时非常有用
-mount /dev/fd0 /mnt/floppy                                                 # 挂载一个软盘
-mount /dev/cdrom /mnt/cdrom                                                # 挂载一个cdrom或dvdrom
-mount /dev/hdc /mnt/cdrecorder                                             # 挂载一个cdrw或dvdrom
-mount /dev/hdb /mnt/cdrecorder                                             # 挂载一个cdrw或dvdrom
-mount -o loop file.iso /mnt/cdrom                                          # 挂载一个文件或ISO镜像文件
-mount -t vfat /dev/hda5 /mnt/hda5                                          # 挂载一个Windows FAT32文件系统
-mount /dev/sda1 /mnt/usbdisk                                               # 挂载一个usb 捷盘或闪存设备
-mount -t smbfs -o username=user,password=pass //WinClient/share /mnt/share # 挂载一个windows网络共享
-</code></pre>
-<h4 id="磁盘空间"><a class="markdownIt-Anchor" href="#磁盘空间"></a> 磁盘空间</h4>
-<pre class="highlight"><code class="">df -h               # 显示已经挂载的分区列表
+unzip file1.zip                       # 解压一个zip格式压缩包</code></pre>
+<h4 id="挂载"><a href="#挂载" class="headerlink" title="挂载"></a>挂载</h4><pre><code class="hljs plain">mount &#x2F;dev&#x2F;hda2 &#x2F;mnt&#x2F;hda2                                                  # 挂载一个叫做hda2的盘 - 确定目录 &#39;&#x2F; mnt&#x2F;hda2&#39; 已经存在
+umount &#x2F;dev&#x2F;hda2                                                           # 卸载一个叫做hda2的盘 - 先从挂载点 &#39;&#x2F; mnt&#x2F;hda2&#39; 退出
+fuser -km &#x2F;mnt&#x2F;hda2                                                        # 当设备繁忙时强制卸载
+umount -n &#x2F;mnt&#x2F;hda2                                                        # 运行卸载操作而不写入 &#x2F;etc&#x2F;mtab 文件- 当文件为只读或当磁盘写满时非常有用
+mount &#x2F;dev&#x2F;fd0 &#x2F;mnt&#x2F;floppy                                                 # 挂载一个软盘
+mount &#x2F;dev&#x2F;cdrom &#x2F;mnt&#x2F;cdrom                                                # 挂载一个cdrom或dvdrom
+mount &#x2F;dev&#x2F;hdc &#x2F;mnt&#x2F;cdrecorder                                             # 挂载一个cdrw或dvdrom
+mount &#x2F;dev&#x2F;hdb &#x2F;mnt&#x2F;cdrecorder                                             # 挂载一个cdrw或dvdrom
+mount -o loop file.iso &#x2F;mnt&#x2F;cdrom                                          # 挂载一个文件或ISO镜像文件
+mount -t vfat &#x2F;dev&#x2F;hda5 &#x2F;mnt&#x2F;hda5                                          # 挂载一个Windows FAT32文件系统
+mount &#x2F;dev&#x2F;sda1 &#x2F;mnt&#x2F;usbdisk                                               # 挂载一个usb 捷盘或闪存设备
+mount -t smbfs -o username&#x3D;user,password&#x3D;pass &#x2F;&#x2F;WinClient&#x2F;share &#x2F;mnt&#x2F;share # 挂载一个windows网络共享</code></pre>
+<h4 id="磁盘空间"><a href="#磁盘空间" class="headerlink" title="磁盘空间"></a>磁盘空间</h4><pre><code class="hljs plain">df -h               # 显示已经挂载的分区列表
 ls -lSr |more       # 以尺寸大小排列文件和目录
-du -sh dir1         # 估算目录 'dir1' 已经使用的磁盘空间'
-du -sk * | sort -rn # 以容量大小为依据依次显示文件和目录的大小
-</code></pre>
-<h4 id="用户与群组"><a class="markdownIt-Anchor" href="#用户与群组"></a> 用户与群组</h4>
-<pre class="highlight"><code class="">groupadd group_name                                                   # 创建一个新用户组
+du -sh dir1         # 估算目录 &#39;dir1&#39; 已经使用的磁盘空间&#39;
+du -sk * | sort -rn # 以容量大小为依据依次显示文件和目录的大小</code></pre>
+<h4 id="用户与群组"><a href="#用户与群组" class="headerlink" title="用户与群组"></a>用户与群组</h4><pre><code class="hljs plain">groupadd group_name                                                   # 创建一个新用户组
 groupdel group_name                                                   # 删除一个用户组
 groupmod -n new_group_name old_group_name                             # 重命名一个用户组
-useradd -c &quot;Name Surname &quot; -g admin -d /home/user1 -s /bin/bash user1 # 创建一个属于 &quot;admin&quot; 用户组的用户
+useradd -c &quot;Name Surname &quot; -g admin -d &#x2F;home&#x2F;user1 -s &#x2F;bin&#x2F;bash user1 # 创建一个属于 &quot;admin&quot; 用户组的用户
 useradd user1                                                         # 创建一个新用户
-userdel -r user1                                                      # 删除一个用户 ( '-r' 排除主目录)
-usermod -c &quot;User FTP&quot; -g system -d /ftp/user1 -s /bin/nologin user1   # 修改用户属性
+userdel -r user1                                                      # 删除一个用户 ( &#39;-r&#39; 排除主目录)
+usermod -c &quot;User FTP&quot; -g system -d &#x2F;ftp&#x2F;user1 -s &#x2F;bin&#x2F;nologin user1   # 修改用户属性
 passwd                                                                # 修改口令
 passwd user1                                                          # 修改一个用户的口令 (只允许root执行)
 chage -E 2005-12-31 user1                                             # 设置用户口令的失效期限
-pwck                                                                  # 检查 '/etc/passwd' 的文件格式和语法修正以及存在的用户
-grpck                                                                 # 检查 '/etc/passwd' 的文件格式和语法修正以及存在的群组
-newgrp group_name                                                     # 登陆进一个新的群组以改变新创建文件的预设群组
-</code></pre>
-<h4 id="systemctl"><a class="markdownIt-Anchor" href="#systemctl"></a> systemctl</h4>
-<pre class="highlight"><code class="">systemctl unmask firewalld              #执行命令，即可实现取消服务的锁定
+pwck                                                                  # 检查 &#39;&#x2F;etc&#x2F;passwd&#39; 的文件格式和语法修正以及存在的用户
+grpck                                                                 # 检查 &#39;&#x2F;etc&#x2F;passwd&#39; 的文件格式和语法修正以及存在的群组
+newgrp group_name                                                     # 登陆进一个新的群组以改变新创建文件的预设群组</code></pre>
+<h4 id="systemctl"><a href="#systemctl" class="headerlink" title="systemctl"></a>systemctl</h4><pre><code class="hljs plain">systemctl unmask firewalld              #执行命令，即可实现取消服务的锁定
 systemctl mask firewalld                #下次需要锁定该服务时执行
 systemctl start firewalld.service       #启动防火墙
 systemctl stop firewalld.service        #停止防火墙
@@ -318,10 +315,8 @@ systemctl enable firewalld.service      #在开机时启用服务
 systemctl disable firewalld.service     #在开机时禁用服务
 systemctl is-enabled firewalld.service  #查看服务是否开机启动
 systemctl list-unit-filesgrep enabled   #查看已启动的服务列表
-systemctl --failed                      #查看启动失败的服务列表
-</code></pre>
-<h4 id="firewall-cmd"><a class="markdownIt-Anchor" href="#firewall-cmd"></a> firewall-cmd</h4>
-<pre class="highlight"><code class="">firewall-cmd --state                         #查看防火墙状态
+systemctl --failed                      #查看启动失败的服务列表</code></pre>
+<h4 id="firewall-cmd"><a href="#firewall-cmd" class="headerlink" title="firewall-cmd"></a>firewall-cmd</h4><pre><code class="hljs plain">firewall-cmd --state                         #查看防火墙状态
 firewall-cmd --reload                        #更新防火墙规则
 firewall-cmd --state                         #查看防火墙状态
 firewall-cmd --reload                        #重载防火墙规则
@@ -332,25 +327,25 @@ firewall-cmd --get-services                  #获取所有支持的服务
 #区域相关
 firewall-cmd --list-all-zones                    #查看所有区域信息
 firewall-cmd --get-active-zones                  #查看活动区域信息
-firewall-cmd --set-default-zone=public           #设置public为默认区域
+firewall-cmd --set-default-zone&#x3D;public           #设置public为默认区域
 firewall-cmd --get-default-zone                  #查看默认区域信息
-firewall-cmd --zone=public --add-interface=eth0  #将接口eth0加入区域public
+firewall-cmd --zone&#x3D;public --add-interface&#x3D;eth0  #将接口eth0加入区域public
 
 #接口相关
-firewall-cmd --zone=public --remove-interface=eth0       #从区域public中删除接口eth0
-firewall-cmd --zone=default --change-interface=eth0      #修改接口eth0所属区域为default
-firewall-cmd --get-zone-of-interface=eth0                #查看接口eth0所属区域
+firewall-cmd --zone&#x3D;public --remove-interface&#x3D;eth0       #从区域public中删除接口eth0
+firewall-cmd --zone&#x3D;default --change-interface&#x3D;eth0      #修改接口eth0所属区域为default
+firewall-cmd --get-zone-of-interface&#x3D;eth0                #查看接口eth0所属区域
 
 #端口控制
-firewall-cmd --add-port=80/tcp --permanent               #永久添加80端口例外(全局)
-firewall-cmd --remove-port=80/tcp --permanent            #永久删除80端口例外(全局)
-firewall-cmd --add-port=65001-65010/tcp --permanent      #永久增加65001-65010例外(全局)
-firewall-cmd  --zone=public --add-port=80/tcp --permanent            #永久添加80端口例外(区域public)
-firewall-cmd  --zone=public --remove-port=80/tcp --permanent         #永久删除80端口例外(区域public)
-firewall-cmd  --zone=public --add-port=65001-65010/tcp --permanent   #永久增加65001-65010例外(区域public)
-firewall-cmd --query-port=8080/tcp    # 查询端口是否开放
-firewall-cmd --permanent --add-port=80/tcp    # 开放80端口
-firewall-cmd --permanent --remove-port=8080/tcp    # 移除端口
+firewall-cmd --add-port&#x3D;80&#x2F;tcp --permanent               #永久添加80端口例外(全局)
+firewall-cmd --remove-port&#x3D;80&#x2F;tcp --permanent            #永久删除80端口例外(全局)
+firewall-cmd --add-port&#x3D;65001-65010&#x2F;tcp --permanent      #永久增加65001-65010例外(全局)
+firewall-cmd  --zone&#x3D;public --add-port&#x3D;80&#x2F;tcp --permanent            #永久添加80端口例外(区域public)
+firewall-cmd  --zone&#x3D;public --remove-port&#x3D;80&#x2F;tcp --permanent         #永久删除80端口例外(区域public)
+firewall-cmd  --zone&#x3D;public --add-port&#x3D;65001-65010&#x2F;tcp --permanent   #永久增加65001-65010例外(区域public)
+firewall-cmd --query-port&#x3D;8080&#x2F;tcp    # 查询端口是否开放
+firewall-cmd --permanent --add-port&#x3D;80&#x2F;tcp    # 开放80端口
+firewall-cmd --permanent --remove-port&#x3D;8080&#x2F;tcp    # 移除端口
 firewall-cmd --reload    #重启防火墙(修改配置后要重启防火墙)
 firewall-cmd --state     #查看防火墙状态
 firewall-cmd --reload                        #更新防火墙规则
@@ -363,55 +358,52 @@ firewall-cmd --get-services                  #获取所有支持的服务
 #区域相关
 firewall-cmd --list-all-zones                    #查看所有区域信息
 firewall-cmd --get-active-zones                  #查看活动区域信息
-firewall-cmd --set-default-zone=public           #设置public为默认区域
+firewall-cmd --set-default-zone&#x3D;public           #设置public为默认区域
 firewall-cmd --get-default-zone                  #查看默认区域信息
-firewall-cmd --zone=public --add-interface=eth0  #将接口eth0加入区域public
+firewall-cmd --zone&#x3D;public --add-interface&#x3D;eth0  #将接口eth0加入区域public
 
 #接口相关
-firewall-cmd --zone=public --remove-interface=eth0       #从区域public中删除接口eth0
-firewall-cmd --zone=default --change-interface=eth0      #修改接口eth0所属区域为default
-firewall-cmd --get-zone-of-interface=eth0                #查看接口eth0所属区域
+firewall-cmd --zone&#x3D;public --remove-interface&#x3D;eth0       #从区域public中删除接口eth0
+firewall-cmd --zone&#x3D;default --change-interface&#x3D;eth0      #修改接口eth0所属区域为default
+firewall-cmd --get-zone-of-interface&#x3D;eth0                #查看接口eth0所属区域
 
 #端口控制
-firewall-cmd --add-port=80/tcp --permanent               #永久添加80端口例外(全局)
-firewall-cmd --remove-port=80/tcp --permanent            #永久删除80端口例外(全局)
-firewall-cmd --add-port=65001-65010/tcp --permanent      #永久增加65001-65010例外(全局)
-firewall-cmd  --zone=public --add-port=80/tcp --permanent            #永久添加80端口例外(区域public)
-firewall-cmd  --zone=public --remove-port=80/tcp --permanent         #永久删除80端口例外(区域public)
-firewall-cmd  --zone=public --add-port=65001-65010/tcp --permanent   #永久增加65001-65010例外(区域public)
-firewall-cmd --query-port=8080/tcp               #查询端口是否开放
-firewall-cmd --permanent --add-port=80/tcp       #开放80端口
-firewall-cmd --permanent --remove-port=8080/tcp  #移除端口
-firewall-cmd --reload    #重启防火墙(修改配置后要重启防火墙)
-</code></pre>
+firewall-cmd --add-port&#x3D;80&#x2F;tcp --permanent               #永久添加80端口例外(全局)
+firewall-cmd --remove-port&#x3D;80&#x2F;tcp --permanent            #永久删除80端口例外(全局)
+firewall-cmd --add-port&#x3D;65001-65010&#x2F;tcp --permanent      #永久增加65001-65010例外(全局)
+firewall-cmd  --zone&#x3D;public --add-port&#x3D;80&#x2F;tcp --permanent            #永久添加80端口例外(区域public)
+firewall-cmd  --zone&#x3D;public --remove-port&#x3D;80&#x2F;tcp --permanent         #永久删除80端口例外(区域public)
+firewall-cmd  --zone&#x3D;public --add-port&#x3D;65001-65010&#x2F;tcp --permanent   #永久增加65001-65010例外(区域public)
+firewall-cmd --query-port&#x3D;8080&#x2F;tcp               #查询端口是否开放
+firewall-cmd --permanent --add-port&#x3D;80&#x2F;tcp       #开放80端口
+firewall-cmd --permanent --remove-port&#x3D;8080&#x2F;tcp  #移除端口
+firewall-cmd --reload    #重启防火墙(修改配置后要重启防火墙)</code></pre>
 
-            </div>
+            </article>
             <hr>
             <div>
-              <p>
+              <div class="post-metas mb-3">
                 
-                  <span>
-                <i class="iconfont icon-inbox"></i>
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
                     
                       <a class="hover-with-bg" href="/categories/Linux/">Linux</a>
-                      &nbsp;
                     
                       <a class="hover-with-bg" href="/categories/Linux/centos/">centos</a>
-                      &nbsp;
                     
-                  </span>&nbsp;&nbsp;
+                  </div>
                 
                 
-                  <span>
-                <i class="iconfont icon-tag"></i>
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
                     
                       <a class="hover-with-bg" href="/tags/centos/">centos</a>
                     
                       <a class="hover-with-bg" href="/tags/linux/">linux</a>
                     
-                  </span>
+                  </div>
                 
-              </p>
+              </div>
               
                 <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a href="https://zh.wikipedia.org/wiki/Wikipedia:CC_BY-SA_3.0%E5%8D%8F%E8%AE%AE%E6%96%87%E6%9C%AC" target="_blank" rel="nofollow noopener noopener">CC BY-SA 3.0协议</a> 。转载请注明出处！</p>
               
@@ -421,7 +413,7 @@ firewall-cmd --reload    #重启防火墙(修改配置后要重启防火墙)
                     
                     
                       <a href="/2020/03/30/im%E6%B7%BB%E5%8A%A0Align%E6%8F%92%E4%BB%B6/">
-                        <i class="fa fa-chevron-left"></i>
+                        <i class="iconfont icon-arrowleft"></i>
                         <span class="hidden-mobile">vim添加Align对齐插件</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
@@ -433,7 +425,7 @@ firewall-cmd --reload    #重启防火墙(修改配置后要重启防火墙)
                       <a href="/2020/03/25/Hello-Markdown/">
                         <span class="hidden-mobile">Hello Markdown</span>
                         <span class="visible-mobile">下一篇</span>
-                        <i class="fa fa-chevron-right"></i>
+                        <i class="iconfont icon-arrowright"></i>
                       </a>
                     
                   </div>
@@ -441,49 +433,50 @@ firewall-cmd --reload    #重启防火墙(修改配置后要重启防火墙)
               
             </div>
 
-              
-                <!-- Comments -->
-                <div class="comments" id="comments">
-                  
-                  
+            
+              <!-- Comments -->
+              <div class="comments" id="comments">
+                
+                
   <div id="vcomments"></div>
-  <script defer src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-  <script defer src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  <script defer src="https://cdn.staticfile.org/valine/1.4.4/Valine.min.js" ></script>
 
   <script type="text/javascript">
-    var notify = 'false' === 'true';
-    var verify = 'false' === 'true';
-    var oldLoad = window.onload;
+    var oldLoadVa = window.onload;
     window.onload = function () {
+      oldLoadVa && oldLoadVa();
+
       new Valine({
-        el: '#vcomments',
-        notify: notify,
-        verify: verify,
+        el: "#vcomments",
         app_id: "8iioS2vGGglRgDxIdS0WxeJf-gzGzoHsz",
         app_key: "x5rlNImtTGoAF9s2bWQnuQ2i",
         placeholder: "说点什么",
-        avatar: "/retro",
-        meta: ['nick', 'mail', 'link'],
+        path: window.location.pathname,
+        avatar: "retro",
+        meta: ["nick","mail","link"],
         pageSize: "10",
+        lang: "zh-CN",
+        highlight: false,
+        recordIP: false,
+        serverURLs: "",
+        mathJax: false
       });
-      oldLoad && oldLoad();
     };
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://valine.js.org" target="_blank" rel="nofollow noopener noopener">comments
       powered by Valine.</a></noscript>
 
 
-                </div>
-              
+              </div>
+            
           </div>
         </div>
       </div>
     </div>
     
       <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
-        <div id="toc-start"></div>
-<div id="toc">
-  <p class="h5"><i class="far fa-list-alt"></i>&nbsp;目录</p>
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
   <div id="tocbot"></div>
 </div>
 
@@ -499,8 +492,8 @@ firewall-cmd --reload    #重启防火墙(修改配置后要重启防火墙)
   </main>
 
   
-    <a class="z-depth-1" id="scroll-top-button" href="#" role="button">
-      <i class="fa fa-chevron-up scroll-top-arrow" aria-hidden="true"></i>
+    <a id="scroll-top-button" href="#" role="button">
+      <i class="iconfont icon-arrowup" aria-hidden="true"></i>
     </a>
   
 
@@ -535,9 +528,10 @@ firewall-cmd --reload    #重启防火墙(修改配置后要重启防火墙)
   <footer class="mt-5">
   <div class="text-center py-3">
     <div>
-      <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><b>Hexo</b></a>
+      <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a>
       <i class="iconfont icon-love"></i>
-      <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"> <b>Fluid</b></a>
+      <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener">
+        <span>Fluid</span></a>
     </div>
     
 
@@ -549,9 +543,7 @@ firewall-cmd --reload    #重启防火墙(修改配置后要重启防火墙)
 
 <!-- SCRIPTS -->
 <script  src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js" ></script>
-<script  src="https://cdn.staticfile.org/popper.js/1.16.1/umd/popper.min.js" ></script>
 <script  src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.min.js" ></script>
-<script  src="https://cdn.staticfile.org/mdbootstrap/4.13.0/js/mdb.min.js" ></script>
 <script  src="/js/main.js" ></script>
 
 
@@ -560,34 +552,12 @@ firewall-cmd --reload    #重启防火墙(修改配置后要重启防火墙)
 
 
   
-  <script  src="https://cdn.staticfile.org/tocbot/4.10.0/tocbot.min.js" ></script>
+  <script  src="https://cdn.staticfile.org/tocbot/4.11.1/tocbot.min.js" ></script>
   <script>
     $(document).ready(function () {
-      var navHeight = $('#navbar').height();
-      var toc = $('#toc');
       var boardCtn = $('#board-ctn');
       var boardTop = boardCtn.offset().top;
-      var tocLimMax = 2 * boardTop + boardCtn.height();
 
-      $(window).scroll(function () {
-        var tocLimMin = $('#toc-start').offset().top - navHeight;
-        var scroH = document.body.scrollTop + document.documentElement.scrollTop;
-
-        if (tocLimMin <= scroH && scroH <= tocLimMax) {
-          toc.css({
-            'display': 'block',
-            'position': 'fixed',
-            'top': navHeight,
-          });
-        } else if (scroH <= tocLimMin) {
-          toc.css({
-            'position': '',
-            'top': '',
-          });
-        } else if (scroH > tocLimMax) {
-          toc.css('display', 'none');
-        }
-      });
       tocbot.init({
         tocSelector: '#tocbot',
         contentSelector: '.post-content',
@@ -597,16 +567,13 @@ firewall-cmd --reload    #重启防火墙(修改配置后要重启防火墙)
         listClass: 'tocbot-list',
         isCollapsedClass: 'tocbot-is-collapsed',
         collapsibleClass: 'tocbot-is-collapsible',
+        collapseDepth: 0,
         scrollSmooth: true,
         headingsOffset: -boardTop
       });
       if ($('.toc-list-item').length > 0) {
-        $('#toc > p').css('visibility', 'visible');
+        $('#toc').css('visibility', 'visible');
       }
-      var offset = boardCtn.css('margin-right')
-      $('#toc-ctn').css({
-        'right': offset
-      })
     });
   </script>
 
@@ -622,19 +589,7 @@ firewall-cmd --reload    #重启防火墙(修改配置后要重启防火墙)
 
 
 
-
-
 <!-- Plugins -->
-
-
-
-  <script  src="https://cdn.staticfile.org/prettify/188.0.0/prettify.min.js" ></script>
-  <script>
-    $(document).ready(function () {
-      $('pre').addClass('prettyprint  linenums');
-      prettyPrint();
-    })
-  </script>
 
 
 
@@ -687,17 +642,25 @@ firewall-cmd --reload    #重启防火墙(修改配置后要重启防火墙)
 
 
 
-  <script defer src="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.js" ></script>
+  <script  src="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.css" />
+
   <script>
-    $("#post img:not(.no-zoom img, img[no-zoom])").each(
+    $('#post img:not(.no-zoom img, img[no-zoom]), img[zoom]').each(
       function () {
-        var element = document.createElement("a");
-        $(element).attr("data-fancybox", "images");
-        $(element).attr("href", $(this).attr("src"));
+        var element = document.createElement('a');
+        $(element).attr('data-fancybox', 'images');
+        $(element).attr('href', $(this).attr('src'));
         $(this).wrap(element);
       }
     );
   </script>
+
+
+
+
+
+
 
 
 

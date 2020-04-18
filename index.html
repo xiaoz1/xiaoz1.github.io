@@ -19,22 +19,25 @@
   <meta name="keywords" content="">
   <title>xiaoz-Blog</title>
 
-  <link  rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/5.12.1/css/all.min.css" />
-<link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
-<link  rel="stylesheet" href="https://cdn.staticfile.org/mdbootstrap/4.13.0/css/mdb.min.css" />
-<link  rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/3.0.1/github-markdown.min.css" />
-
-<link rel="stylesheet" href="//at.alicdn.com/t/font_1067060_qzomjdt8bmp.css">
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
+<link  rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/4.0.0/github-markdown.min.css" />
 
 
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.18.1/styles/github-gist.min.css" />
 
-  <link  rel="stylesheet" href="/lib/prettify/tomorrow-night.min.css" />
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_fmb4a04yx8h.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1763956_fn4jzu5k58f.css">
+
+
+
 
 <link  rel="stylesheet" href="/css/main.css" />
-
-
-  <link defer rel="stylesheet" href="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.css" />
-
 
 <!-- 自定义样式保持在最底部 -->
 
@@ -62,41 +65,46 @@
           
           
           
-          
           <li class="nav-item">
-            <a class="nav-link" href="/">首页</a>
+            <a class="nav-link" href="/">
+              <i class="iconfont icon-home-fill"></i>
+              首页</a>
           </li>
         
           
           
           
-          
           <li class="nav-item">
-            <a class="nav-link" href="/archives/">归档</a>
+            <a class="nav-link" href="/archives/">
+              <i class="iconfont icon-archive-fill"></i>
+              归档</a>
           </li>
         
           
           
           
-          
           <li class="nav-item">
-            <a class="nav-link" href="/categories/">分类</a>
+            <a class="nav-link" href="/categories/">
+              <i class="iconfont icon-category-fill"></i>
+              分类</a>
           </li>
         
           
           
           
-          
           <li class="nav-item">
-            <a class="nav-link" href="/tags/">标签</a>
+            <a class="nav-link" href="/tags/">
+              <i class="iconfont icon-tags-fill"></i>
+              标签</a>
           </li>
         
           
           
           
-          
           <li class="nav-item">
-            <a class="nav-link" href="/about/">关于</a>
+            <a class="nav-link" href="/about/">
+              <i class="iconfont icon-user-fill"></i>
+              关于</a>
           </li>
         
         
@@ -114,7 +122,7 @@
          style="background: url('https://cdn.jsdelivr.net/gh/xiaoz1/mycdn/img/homebg.png') no-repeat center center;
            background-size: cover;">
       <div class="full-bg-img">
-        <div class="mask rgba-black-light flex-center">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="container text-center white-text fadeInUp">
             <span class="h2" id="subtitle">
               
@@ -125,7 +133,7 @@
 
           
             <div class="scroll-down-bar">
-              <i class="fas fa-angle-down scroll-down-arrow"></i>
+              <i class="iconfont icon-arrowdown"></i>
             </div>
           
         </div>
@@ -136,7 +144,7 @@
   <main>
     
       <div class="container nopadding-md">
-        <div class="py-5 z-depth-3" id="board"
+        <div class="py-5" id="board"
           style=margin-top:0>
           
           <div class="container">
@@ -149,28 +157,99 @@
     
     
     <div class="col-12 col-md-12 mx-auto index-info">
-      <a href="/2020/04/05/OSI%E5%8F%82%E8%80%83%E6%A8%A1%E5%9E%8B/">
-        <p class="h4 index-header">OSI参考模型</p>
-      </a>
+      <a class="index-header" href="/2020/04/18/%E5%8D%8E%E4%B8%BAOLT%E5%91%BD%E4%BB%A4/">华为OLT命令</a>
 
-      <a href="/2020/04/05/OSI%E5%8F%82%E8%80%83%E6%A8%A1%E5%9E%8B/">
+      <a href="/2020/04/18/%E5%8D%8E%E4%B8%BAOLT%E5%91%BD%E4%BB%A4/" class="index-excerpt">
         
         
           
         
-        <div class="index-excerpt" >
-          <div class="index-text mb-1"> 介绍
-    开放式系统互联 （英语：Open System Interconnection，缩写为 OSI），一般都叫OSI参考模型，是 国际标准化组织（ISO，International Standards Organization） 在1985年研究的网络互连模型。
-    ISO 为了更好的使网络应用更为普及，推出了 OSI参考模型 。其含义就是推荐所有公司使用这个规范来控制网络。这样所有公司都有相同的规范，就能互联了。
- 层次划分
-    OSI参考模型本身并不是一个网络体系结构，因为它并没有定义每一层的服务和所用的协议。它只是指明了每一层应该做些什么事。
-    OSI将计算机网</div>
-        </div>
+        <div>命令模式命令模式关系基础命令模式功能及特性列表:
+
+
+
+命令模式
+功能
+模式提示符示例
+进入方式
+
+
+
+
+普通用户模式
+查看系统基本信息
+huawei&gt;
+登录后直接进入（模式提示符已改）
+
+
+特权模式
+进行系统基本配置
+huawei#
+huawei&gt;enable
+
+
+全局配置模式
+配置系统设备及全局性参数
+huawei(config)#
+huawei#config
+
+
+
+
+端口命令模式</div>
       </a>
 
-      <div class="index-btm">
+      <div class="index-btm post-metas">
         
-          <i class="iconfont icon-riqi2"></i>&nbsp;2020-04-05&nbsp;&nbsp;
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>&nbsp;2020-04-18
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/OLT/">OLT</a>
+            
+              <a href="/categories/OLT/%E5%8D%8E%E4%B8%BAOLT/">华为OLT</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%8D%8E%E4%B8%BAOLT/">华为OLT</a>
+            
+              <a href="/tags/MA5680T/">MA5680T</a>
+            
+              <a href="/tags/OLT/">OLT</a>
+            
+          </div>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <div class="col-12 col-md-12 mx-auto index-info">
+      <a class="index-header" href="/2020/04/05/OSI%E5%8F%82%E8%80%83%E6%A8%A1%E5%9E%8B/">OSI参考模型</a>
+
+      <a href="/2020/04/05/OSI%E5%8F%82%E8%80%83%E6%A8%A1%E5%9E%8B/" class="index-excerpt">
+        
+        
+          
+        
+        <div>介绍&ensp;&ensp;&ensp;&ensp;开放式系统互联 （英语：Open System Interconnection，缩写为 OSI），一般都叫OSI参考模型，是 国际标准化组织（ISO，International Standards Organization） 在1985年研究的网络互连模型。&ensp;&ensp;&ensp;&ensp;ISO 为了更好的使网络应用更为普及，推出</div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>&nbsp;2020-04-05
+          </div>
         
         
         
@@ -182,55 +261,47 @@
     
     
     <div class="col-12 col-md-12 mx-auto index-info">
-      <a href="/2020/03/30/im%E6%B7%BB%E5%8A%A0Align%E6%8F%92%E4%BB%B6/">
-        <p class="h4 index-header">vim添加Align对齐插件</p>
+      <a class="index-header" href="/2020/03/30/im%E6%B7%BB%E5%8A%A0Align%E6%8F%92%E4%BB%B6/">vim添加Align对齐插件</a>
+
+      <a href="/2020/03/30/im%E6%B7%BB%E5%8A%A0Align%E6%8F%92%E4%BB%B6/" class="index-excerpt">
+        
+        
+          
+        
+        <div>&ensp;&ensp;&ensp;&ensp;开始用Blog记录一些东西的时候，其中代码后面会加入注释，但是代码长短不一也就导致了注释参差不齐；作为一个小白，根本不知道如何快速的把它们对齐，所以求教了大佬们，大佬们上来就是Align插件，于是我就开始baidu\google找怎么安装这个vim上的插件，但是并没有搜到一个我想要的结果，东拼西凑总算装上了，这时候当然要记录下来阿！  
+
+PS:其实</div>
       </a>
 
-      <a href="/2020/03/30/im%E6%B7%BB%E5%8A%A0Align%E6%8F%92%E4%BB%B6/">
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>&nbsp;2020-03-30
+          </div>
         
         
-          
-        
-        <div class="index-excerpt" >
-          <div class="index-text mb-1">    开始用Blog记录一些东西的时候，其中代码后面会加入注释，但是代码长短不一也就导致了注释参差不齐；作为一个小白，根本不知道如何快速的把它们对齐，所以求教了大佬们，大佬们上来就是Align插件，于是我就开始baidu\google找怎么安装这个vim上的插件，但是并没有搜到一个我想要的结果，东拼西凑总算装上了，这时候当然要记录下来阿！
-
-PS:其实是有官方的，奈何我的小学鸡文化水平并没有办法看明白vim官方Align插件
-
- 安装
-在主目录创建.vim目录
-cd
-mkdir .vim
-vim .vimrc
-
-创建.vimrc配置文件，并添加以下内容
-set nocp
-filetype p</div>
-        </div>
-      </a>
-
-      <div class="index-btm">
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2020-03-30&nbsp;&nbsp;
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Linux/">Linux</a>
+            
+              <a href="/categories/Linux/centos/">centos</a>
+            
+          </div>
         
         
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/Linux/">Linux</a>&nbsp;
-          
-            <a href="/categories/Linux/centos/">centos</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/Linux/">Linux</a>&nbsp;
-          
-            <a href="/tags/centos/">centos</a>&nbsp;
-          
-            <a href="/tags/vim/">vim</a>&nbsp;
-          
-            <a href="/tags/vim%E6%8F%92%E4%BB%B6/">vim插件</a>&nbsp;
-          
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/Linux/">Linux</a>
+            
+              <a href="/tags/centos/">centos</a>
+            
+              <a href="/tags/vim/">vim</a>
+            
+              <a href="/tags/vim%E6%8F%92%E4%BB%B6/">vim插件</a>
+            
+          </div>
         
       </div>
     </div>
@@ -240,48 +311,45 @@ filetype p</div>
     
     
     <div class="col-12 col-md-12 mx-auto index-info">
-      <a href="/2020/03/29/Linux%E5%91%BD%E4%BB%A4%E9%9B%86/">
-        <p class="h4 index-header">Linux命令集</p>
-      </a>
+      <a class="index-header" href="/2020/03/29/Linux%E5%91%BD%E4%BB%A4%E9%9B%86/">Linux命令集</a>
 
-      <a href="/2020/03/29/Linux%E5%91%BD%E4%BB%A4%E9%9B%86/">
+      <a href="/2020/03/29/Linux%E5%91%BD%E4%BB%A4%E9%9B%86/" class="index-excerpt">
         
         
           
         
-        <div class="index-excerpt" >
-          <div class="index-text mb-1"> 系统信息
-arch                 # 显示机器的处理器架构
+        <div>系统信息arch                 # 显示机器的处理器架构
 uname -m             # 显示机器的处理器架构
 uname -r             # 显示正在使用的内核版本
-dmidecode -q         # 显示硬件系统部件 - (SMBIOS / DMI)
-hdparm -i /dev/hda   # 罗列一个磁盘的架构特性
-hdparm -tT /dev/sda  # 在磁盘上执行测试性读取操作
-cat /proc/cpuinfo    # 显示CPU info的信息
-cat /proc/interrupts # 显示中断
-cat /</div>
-        </div>
+dmidecode -q         # 显示硬件系统部件 - (SMBIOS &#x2F; DMI)
+hdparm -i &#x2F;dev&#x2F;hda   # 罗列一个磁盘</div>
       </a>
 
-      <div class="index-btm">
+      <div class="index-btm post-metas">
         
-          <i class="iconfont icon-riqi2"></i>&nbsp;2020-03-29&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/Linux/">Linux</a>&nbsp;
-          
-            <a href="/categories/Linux/centos/">centos</a>&nbsp;
-          &nbsp;
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>&nbsp;2020-03-29
+          </div>
         
         
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/centos/">centos</a>&nbsp;
-          
-            <a href="/tags/linux/">linux</a>&nbsp;
-          
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Linux/">Linux</a>
+            
+              <a href="/categories/Linux/centos/">centos</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/centos/">centos</a>
+            
+              <a href="/tags/linux/">linux</a>
+            
+          </div>
         
       </div>
     </div>
@@ -291,28 +359,17 @@ cat /</div>
     
     
     <div class="col-12 col-md-12 mx-auto index-info">
-      <a href="/2020/03/25/Hello-Markdown/">
-        <p class="h4 index-header">Hello Markdown</p>
-      </a>
+      <a class="index-header" href="/2020/03/25/Hello-Markdown/">Hello Markdown</a>
 
-      <a href="/2020/03/25/Hello-Markdown/">
+      <a href="/2020/03/25/Hello-Markdown/" class="index-excerpt">
         
         
           
         
-        <div class="index-excerpt" >
-          <div class="index-text mb-1"> h1 标题
- h2 标题
- h3 标题
- h4 标题
- h5 标题
- h6 标题
- 水平线
+        <div>h1 标题h2 标题h3 标题h4 标题h5 标题h6 标题水平线
 
 
-
- 文本样式
-粗字体
+文本样式粗字体
 粗字休
 斜字休
 斜字体
@@ -327,29 +384,30 @@ The HTML specification is maintained by the W3C.
 
 引用文本 Blockquotes
 
-引用的行内混合 Blockquotes
-
-引用：如果想要插入空白换行即&lt;br /&gt;标签，在插入处先键入两个以上的空格然后回车即可，普通链接。
-
- 多语言代码</div>
-        </div>
+</div>
       </a>
 
-      <div class="index-btm">
+      <div class="index-btm post-metas">
         
-          <i class="iconfont icon-riqi2"></i>&nbsp;2020-03-25&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/Markdown/">Markdown</a>&nbsp;
-          &nbsp;
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>&nbsp;2020-03-25
+          </div>
         
         
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/Markdown/">Markdown</a>&nbsp;
-          
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Markdown/">Markdown</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/Markdown/">Markdown</a>
+            
+          </div>
         
       </div>
     </div>
@@ -359,32 +417,22 @@ The HTML specification is maintained by the W3C.
     
     
     <div class="col-12 col-md-12 mx-auto index-info">
-      <a href="/2020/03/25/hello-world/">
-        <p class="h4 index-header">Hello World</p>
-      </a>
+      <a class="index-header" href="/2020/03/25/hello-world/">Hello World</a>
 
-      <a href="/2020/03/25/hello-world/">
+      <a href="/2020/03/25/hello-world/" class="index-excerpt">
         
         
           
         
-        <div class="index-excerpt" >
-          <div class="index-text mb-1">Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
- Quick Start
- Create a new post
-$ hexo new "My New Post"
-
-More info: Writing
- Run server
-$ hexo server
-
-M</div>
-        </div>
+        <div>Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
+Quick</div>
       </a>
 
-      <div class="index-btm">
+      <div class="index-btm post-metas">
         
-          <i class="iconfont icon-riqi2"></i>&nbsp;2020-03-25&nbsp;&nbsp;
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>&nbsp;2020-03-25
+          </div>
         
         
         
@@ -405,8 +453,8 @@ M</div>
   </main>
 
   
-    <a class="z-depth-1" id="scroll-top-button" href="#" role="button">
-      <i class="fa fa-chevron-up scroll-top-arrow" aria-hidden="true"></i>
+    <a id="scroll-top-button" href="#" role="button">
+      <i class="iconfont icon-arrowup" aria-hidden="true"></i>
     </a>
   
 
@@ -441,9 +489,10 @@ M</div>
   <footer class="mt-5">
   <div class="text-center py-3">
     <div>
-      <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><b>Hexo</b></a>
+      <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a>
       <i class="iconfont icon-love"></i>
-      <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"> <b>Fluid</b></a>
+      <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener">
+        <span>Fluid</span></a>
     </div>
     
 
@@ -455,9 +504,7 @@ M</div>
 
 <!-- SCRIPTS -->
 <script  src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js" ></script>
-<script  src="https://cdn.staticfile.org/popper.js/1.16.1/umd/popper.min.js" ></script>
 <script  src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.min.js" ></script>
-<script  src="https://cdn.staticfile.org/mdbootstrap/4.13.0/js/mdb.min.js" ></script>
 <script  src="/js/main.js" ></script>
 
 
@@ -475,19 +522,7 @@ M</div>
 
 
 
-
-
 <!-- Plugins -->
-
-
-
-  <script  src="https://cdn.staticfile.org/prettify/188.0.0/prettify.min.js" ></script>
-  <script>
-    $(document).ready(function () {
-      $('pre').addClass('prettyprint  linenums');
-      prettyPrint();
-    })
-  </script>
 
 
 
@@ -540,17 +575,11 @@ M</div>
 
 
 
-  <script defer src="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.js" ></script>
-  <script>
-    $("#post img:not(.no-zoom img, img[no-zoom])").each(
-      function () {
-        var element = document.createElement("a");
-        $(element).attr("data-fancybox", "images");
-        $(element).attr("href", $(this).attr("src"));
-        $(this).wrap(element);
-      }
-    );
-  </script>
+
+
+
+
+
 
 
 
