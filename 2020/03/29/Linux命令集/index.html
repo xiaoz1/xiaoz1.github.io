@@ -23,7 +23,7 @@
 <link  rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/4.0.0/github-markdown.min.css" />
 
 
-  <link  rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.18.1/styles/github-gist.min.css" />
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/10.0.0/styles/github-gist.min.css" />
 
 
 <!-- 主题依赖的图标库，不要自行修改 -->
@@ -32,7 +32,7 @@
 
 
 
-<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_ijqayz9ro8k.css">
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_pjno9b9zyxs.css">
 
 
 
@@ -153,7 +153,7 @@
                       <i class="iconfont icon-clock-fill"></i>
                     
                     
-                    39
+                    40
                      分钟
                   </span>
                 
@@ -181,12 +181,16 @@
         <div class="py-5" id="board">
           <div class="post-content mx-auto" id="post">
             
-              <p class="note note-warning">
-                本文最后更新于：星期三, 四月 1日 2020, 12:06 中午
+              <p class="note note-info">
+                
+                  本文最后更新于：星期六, 五月 2日 2020, 2:42 下午
+                
               </p>
             
             <article class="markdown-body">
-              <h4 id="系统信息"><a href="#系统信息" class="headerlink" title="系统信息"></a>系统信息</h4><pre><code class="hljs plain">arch                 # 显示机器的处理器架构
+              <h4 id="系统更新"><a href="#系统更新" class="headerlink" title="系统更新"></a>系统更新</h4><pre><code class="hljs plain">yum update   #升级所有包同时也升级软件和系统内核
+yum upgrade  #只升级所有包，不升级软件和系统内核</code></pre>
+<h4 id="系统信息"><a href="#系统信息" class="headerlink" title="系统信息"></a>系统信息</h4><pre><code class="hljs plain">arch                 # 显示机器的处理器架构
 uname -m             # 显示机器的处理器架构
 uname -r             # 显示正在使用的内核版本
 dmidecode -q         # 显示硬件系统部件 - (SMBIOS &#x2F; DMI)
@@ -439,7 +443,7 @@ firewall-cmd --reload    #重启防火墙(修改配置后要重启防火墙)</co
                 
                 
   <div id="vcomments"></div>
-  <script defer src="https://cdn.staticfile.org/valine/1.4.4/Valine.min.js" ></script>
+  <script defer src="https://cdn.staticfile.org/valine/1.4.14/Valine.min.js" ></script>
 
   <script type="text/javascript">
     var oldLoadVa = window.onload;
@@ -459,7 +463,6 @@ firewall-cmd --reload    #重启防火墙(修改配置后要重启防火墙)</co
         highlight: false,
         recordIP: false,
         serverURLs: "",
-        mathJax: false
       });
     };
   </script>
@@ -635,7 +638,7 @@ firewall-cmd --reload    #重启防火墙(修改配置后要重启防火墙)</co
     var path = "/local-search.xml";
     var inputArea = document.querySelector("#local-search-input");
     inputArea.onclick = function () {
-      getSearchFile(path);
+      searchFunc(path, 'local-search-input', 'local-search-result');
       this.onclick = null
     }
   </script>

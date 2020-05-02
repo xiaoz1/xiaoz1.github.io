@@ -23,7 +23,7 @@
 <link  rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/4.0.0/github-markdown.min.css" />
 
 
-  <link  rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.18.1/styles/github-gist.min.css" />
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/10.0.0/styles/github-gist.min.css" />
 
 
 <!-- 主题依赖的图标库，不要自行修改 -->
@@ -32,7 +32,7 @@
 
 
 
-<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_ijqayz9ro8k.css">
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_pjno9b9zyxs.css">
 
 
 
@@ -181,8 +181,10 @@
         <div class="py-5" id="board">
           <div class="post-content mx-auto" id="post">
             
-              <p class="note note-warning">
-                本文最后更新于：星期一, 三月 30日 2020, 1:49 下午
+              <p class="note note-info">
+                
+                  本文最后更新于：星期一, 三月 30日 2020, 1:49 下午
+                
               </p>
             
             <article class="markdown-body">
@@ -268,7 +270,7 @@ gzip Align.vba.gz  #解压文件</code></pre><br>在/.vim/目录下<br><pre><cod
                 
                 
   <div id="vcomments"></div>
-  <script defer src="https://cdn.staticfile.org/valine/1.4.4/Valine.min.js" ></script>
+  <script defer src="https://cdn.staticfile.org/valine/1.4.14/Valine.min.js" ></script>
 
   <script type="text/javascript">
     var oldLoadVa = window.onload;
@@ -288,7 +290,6 @@ gzip Align.vba.gz  #解压文件</code></pre><br>在/.vim/目录下<br><pre><cod
         highlight: false,
         recordIP: false,
         serverURLs: "",
-        mathJax: false
       });
     };
   </script>
@@ -464,7 +465,7 @@ gzip Align.vba.gz  #解压文件</code></pre><br>在/.vim/目录下<br><pre><cod
     var path = "/local-search.xml";
     var inputArea = document.querySelector("#local-search-input");
     inputArea.onclick = function () {
-      getSearchFile(path);
+      searchFunc(path, 'local-search-input', 'local-search-result');
       this.onclick = null
     }
   </script>

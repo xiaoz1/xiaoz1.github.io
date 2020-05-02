@@ -23,7 +23,7 @@
 <link  rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/4.0.0/github-markdown.min.css" />
 
 
-  <link  rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.18.1/styles/github-gist.min.css" />
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/10.0.0/styles/github-gist.min.css" />
 
 
 <!-- 主题依赖的图标库，不要自行修改 -->
@@ -32,7 +32,7 @@
 
 
 
-<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_ijqayz9ro8k.css">
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_pjno9b9zyxs.css">
 
 
 
@@ -298,11 +298,12 @@ PS:其实</div>
         
           
         
-        <div>系统信息arch                 # 显示机器的处理器架构
+        <div>系统更新yum update   #升级所有包同时也升级软件和系统内核
+yum upgrade  #只升级所有包，不升级软件和系统内核
+系统信息arch                 # 显示机器的处理器架构
 uname -m             # 显示机器的处理器架构
 uname -r             # 显示正在使用的内核版本
-dmidecode -q         # 显示硬件系统部件 - (SMBIOS &#x2F; DMI)
-hdparm -i &#x2F;dev&#x2F;hda   # 罗列一个磁盘</div>
+dmidecode -q         # 显示</div>
       </a>
 
       <div class="index-btm post-metas">
@@ -548,7 +549,7 @@ Quick</div>
     var path = "/local-search.xml";
     var inputArea = document.querySelector("#local-search-input");
     inputArea.onclick = function () {
-      getSearchFile(path);
+      searchFunc(path, 'local-search-input', 'local-search-result');
       this.onclick = null
     }
   </script>

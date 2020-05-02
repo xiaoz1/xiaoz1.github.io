@@ -23,7 +23,7 @@
 <link  rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/4.0.0/github-markdown.min.css" />
 
 
-  <link  rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.18.1/styles/github-gist.min.css" />
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/10.0.0/styles/github-gist.min.css" />
 
 
 <!-- 主题依赖的图标库，不要自行修改 -->
@@ -32,7 +32,7 @@
 
 
 
-<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_ijqayz9ro8k.css">
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_pjno9b9zyxs.css">
 
 
 
@@ -181,8 +181,10 @@
         <div class="py-5" id="board">
           <div class="post-content mx-auto" id="post">
             
-              <p class="note note-warning">
-                本文最后更新于：星期一, 四月 6日 2020, 12:12 凌晨
+              <p class="note note-info">
+                
+                  本文最后更新于：星期一, 四月 6日 2020, 12:12 凌晨
+                
               </p>
             
             <article class="markdown-body">
@@ -544,7 +546,7 @@ Andrew-&gt;&gt;China: I am good thanks!</code></pre>
                 
                 
   <div id="vcomments"></div>
-  <script defer src="https://cdn.staticfile.org/valine/1.4.4/Valine.min.js" ></script>
+  <script defer src="https://cdn.staticfile.org/valine/1.4.14/Valine.min.js" ></script>
 
   <script type="text/javascript">
     var oldLoadVa = window.onload;
@@ -564,7 +566,6 @@ Andrew-&gt;&gt;China: I am good thanks!</code></pre>
         highlight: false,
         recordIP: false,
         serverURLs: "",
-        mathJax: false
       });
     };
   </script>
@@ -740,7 +741,7 @@ Andrew-&gt;&gt;China: I am good thanks!</code></pre>
     var path = "/local-search.xml";
     var inputArea = document.querySelector("#local-search-input");
     inputArea.onclick = function () {
-      getSearchFile(path);
+      searchFunc(path, 'local-search-input', 'local-search-result');
       this.onclick = null
     }
   </script>
@@ -765,55 +766,55 @@ Andrew-&gt;&gt;China: I am good thanks!</code></pre>
 
 
 
+  
 
+  
+    <!-- MathJax -->
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
+        },
+        options: {
+          renderActions: {
+            findScript: [10, doc => {
+              document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+                const display = !!node.type.match(/; *mode=display/);
+                const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                const text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = { node: text, delim: '', n: 0 };
+                math.end = { node: text, delim: '', n: 0 };
+                doc.math.push(math);
+              });
+            }, '', false],
+            insertedScript: [200, () => {
+              document.querySelectorAll('mjx-container').forEach(node => {
+                let target = node.parentNode;
+                if (target.nodeName.toLowerCase() === 'li') {
+                  target.parentNode.classList.add('has-jax');
+                }
+              });
+            }, '', false]
+          }
+        }
+      };
+    </script>
 
+    <script async src="https://cdn.staticfile.org/mathjax/3.0.5/es5/tex-svg.js" ></script>
 
-<!-- MathJax -->
-<script>
-  MathJax = {
-    tex: {
-      inlineMath: [['$', '$'], ['\\(', '\\)']]
-    },
-    options: {
-      renderActions: {
-        findScript: [10, doc => {
-          document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
-            const display = !!node.type.match(/; *mode=display/);
-            const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
-            const text = document.createTextNode('');
-            node.parentNode.replaceChild(text, node);
-            math.start = { node: text, delim: '', n: 0 };
-            math.end = { node: text, delim: '', n: 0 };
-            doc.math.push(math);
-          });
-        }, '', false],
-        insertedScript: [200, () => {
-          document.querySelectorAll('mjx-container').forEach(node => {
-            let target = node.parentNode;
-            if (target.nodeName.toLowerCase() === 'li') {
-              target.parentNode.classList.add('has-jax');
-            }
-          });
-        }, '', false]
-      }
-    }
-  };
-</script>
-
-<script async src="https://cdn.staticfile.org/mathjax/3.0.5/es5/tex-svg.js" ></script>
-
-
-
-
-
-
+  
 
 
 
 
 
 
-  <script  src="https://cdn.staticfile.org/mermaid/8.4.8/mermaid.min.js" ></script>
+
+
+
+
+  <script  src="https://cdn.staticfile.org/mermaid/8.5.0/mermaid.min.js" ></script>
   <script>
     if (window.mermaid) {
       mermaid.initialize({"theme":"default"});
